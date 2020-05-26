@@ -7,6 +7,20 @@ const Container = styled.div`
   .header-home-link {
     color: #edf0f5;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      font-weight: bold;
+      font-size: 3rem;
+    }
+
+    .logo-name {
+      font-weight: bold;
+      font-size: 1.15rem;
+      width: 10rem;
+      margin-left: 1rem;
+    }
   }
 `
 
@@ -24,7 +38,8 @@ const HeaderHomeLink = () => {
   return (
     <Container className="header-home-link-container">
       <Link className="header-home-link" to="/">
-        {data.site.siteMetadata.title}
+        <div className="logo">CCS</div>
+        <div className="logo-name">{data.site.siteMetadata.title}</div>
       </Link>
     </Container>
   )

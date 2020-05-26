@@ -14,8 +14,9 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    background: #0d0b0e;
-    padding: 2rem;
+    height: 6rem;
+    background: transparent;
+    padding: 0 2rem;
 
     .header-nav-container {
       display: flex;
@@ -81,9 +82,7 @@ const Header = () => {
   return (
     <Container>
       <header className="header-container">
-        <h1 className="header-title" style={{ margin: 0 }}>
-          <HeaderHomeLink />
-        </h1>
+        <HeaderHomeLink />
         <div className="header-nav-container">
           <HeaderNavLink to="/projects/">Projects</HeaderNavLink>
           <HeaderNavLink to="/about-spectroscopy/">
