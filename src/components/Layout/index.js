@@ -2,7 +2,8 @@ import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-import Header from "./Header"
+import GlobalStyle from "./GlobalStyle"
+import Header from "../Header"
 
 const Main = styled.main`
 `
@@ -10,6 +11,7 @@ const Main = styled.main`
 const Layout = ({ children }) => {
   return (
     <Fragment>
+      <GlobalStyle />
       <Header />
       <Main>
         {children}

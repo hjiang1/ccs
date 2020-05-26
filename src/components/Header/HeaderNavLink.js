@@ -9,6 +9,7 @@ const Container = styled.div`
   .header-nav-link {
     color: white;
     text-decoration: none;
+    font-weight: bold;
   }
 `
 
