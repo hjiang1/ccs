@@ -35,6 +35,10 @@ const Container = styled.div`
       url(${brain});
     background-position: center;
     background-size: cover;
+
+    .page-title {
+      text-align: center;
+    }
   }
 
   .projects-preview {

@@ -9,8 +9,12 @@ const Container = styled.div`
   background-color: white;
   border-top: 1px solid gray;
   border-bottom: 1px solid #edf0f5;
-
-  background-color: #181d23;
+  background: linear-gradient(
+    to right,
+    black,
+    #181d23,
+    rgba(76, 105, 134, 0.25)
+  );
 
   .dropdown-link {
     color: #edf0f5;
@@ -20,7 +24,7 @@ const Container = styled.div`
     flex: 1;
 
     :hover {
-      background-color: #3d4552;
+      background-color: rgba(76, 105, 134, 0.5);
     }
   }
 `
