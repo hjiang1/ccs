@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   html {
-    font-family: Geneva, Tahoma, Verdana, sans-serif; 
+    font-family: Roboto, sans-serif; 
   }
 
   body {
