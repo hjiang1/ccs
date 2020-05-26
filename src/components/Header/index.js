@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+import { FaBars } from "react-icons/fa"
 
 import HeaderHomeLink from "./HeaderHomeLink"
 import HeaderNavLink from "./HeaderNavLink"
@@ -15,8 +16,28 @@ const Container = styled.header`
 
   .header-nav-container {
     display: flex;
-
+    align-items: center;
     margin: 0 -0.5rem;
+
+    .header-nav-link {
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    .collapsible-menu-button {
+      display: none;
+
+      svg {
+        height: 2rem;
+        width: 2rem;
+        color: white;
+      }
+
+      @media screen and (max-width: 1000px) {
+        display: block;
+      }
+    }
   }
 `
 
@@ -38,6 +59,9 @@ const Header = () => (
       <HeaderNavLink className="header-nav-link" to="/contact/">
         Contact
       </HeaderNavLink>
+      <button className="collapsible-menu-button">
+        <FaBars />
+      </button>
     </div>
   </Container>
 )
