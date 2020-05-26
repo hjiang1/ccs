@@ -7,7 +7,7 @@ const Container = styled.div`
   margin: 0 0.5rem;
 
   .header-nav-link {
-    color: white;
+    color: #edf0f5;
     text-decoration: none;
     font-weight: bold;
   }

@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
   .header-home-link {
-    color: white;
+    color: #edf0f5;
     text-decoration: none;
   }
 `

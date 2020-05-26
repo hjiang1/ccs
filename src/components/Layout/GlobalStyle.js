@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
+    background-color: #8a91a4;
   }
 
   button {
@@ -14,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     cursor: pointer;
     padding: 0;
+
+    :focus {
+      outline: none;
+    }
   }
 `
 
