@@ -2,17 +2,24 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.footer`
-  display: flex;
   background-color: lightgray;
+  padding: 2rem 6rem;
 
   .footer-item-container {
     display: grid;
     grid-template-columns: 1fr max-content max-content;
     grid-gap: 2rem;
-    margin: 2rem auto;
-    max-width: 1400px;
+
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: none;
+      grid-template-rows: repeat(3, max-content);
+    }
 
     .footer-item {
+      .footer-item-title {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
     }
   }
 `
