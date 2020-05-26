@@ -26,13 +26,16 @@ const Header = () => (
       <HeaderHomeLink />
     </h1>
     <div className="header-nav-container">
-      <HeaderNavLink className="header-nav-link" to="/">
+      <HeaderNavLink className="header-nav-link" to="/projects/">
+        Projects
+      </HeaderNavLink>
+      <HeaderNavLink className="header-nav-link" to="/about-spectroscopy/">
         About Spectroscopy
       </HeaderNavLink>
-      <HeaderNavLink className="header-nav-link" to="/">
+      <HeaderNavLink className="header-nav-link" to="/members/">
         Members
       </HeaderNavLink>
-      <HeaderNavLink className="header-nav-link" to="/">
+      <HeaderNavLink className="header-nav-link" to="/contact/">
         Contact
       </HeaderNavLink>
     </div>
