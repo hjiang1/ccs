@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   html {
-    font-family: Roboto, sans-serif; 
+    font-family: Roboto, sans-serif;
   }
 
   body {

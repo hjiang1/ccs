@@ -21,16 +21,22 @@ const Container = styled.header`
 `
 
 const Header = () => (
-    <Container>
-      <h1 className="header-title" style={{ margin: 0 }}>
-        <HeaderHomeLink />
-      </h1>
-      <div className="header-nav-container">
-        <HeaderNavLink className="header-nav-link" to="/">About Spectroscopy</HeaderNavLink>
-        <HeaderNavLink className="header-nav-link" to="/">Members</HeaderNavLink>
-        <HeaderNavLink className="header-nav-link" to="/">Contact</HeaderNavLink>
-      </div>
-    </Container>
+  <Container>
+    <h1 className="header-title" style={{ margin: 0 }}>
+      <HeaderHomeLink />
+    </h1>
+    <div className="header-nav-container">
+      <HeaderNavLink className="header-nav-link" to="/">
+        About Spectroscopy
+      </HeaderNavLink>
+      <HeaderNavLink className="header-nav-link" to="/">
+        Members
+      </HeaderNavLink>
+      <HeaderNavLink className="header-nav-link" to="/">
+        Contact
+      </HeaderNavLink>
+    </div>
+  </Container>
 )
 
 Header.propTypes = {

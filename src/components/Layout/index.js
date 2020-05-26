@@ -4,23 +4,17 @@ import styled from "styled-components"
 
 import GlobalStyle from "./GlobalStyle"
 import Header from "../Header"
+import Footer from "../Footer"
 
-const Main = styled.main`
-`
+const Main = styled.main``
 
 const Layout = ({ children }) => {
   return (
     <Fragment>
       <GlobalStyle />
       <Header />
-      <Main>
-        {children}
-      </Main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <Main>{children}</Main>
+      <Footer />
     </Fragment>
   )
 }
