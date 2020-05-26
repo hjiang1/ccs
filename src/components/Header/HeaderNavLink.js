@@ -4,30 +4,32 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const Container = styled.div`
-  .header-link {
+  margin: 0 0.5rem;
+
+  .header-nav-link {
     color: white;
     text-decoration: none;
   }
 `
 
-const HeaderLink = ({ to, children }) => {
+const HeaderNavLink = ({ to, children }) => {
   return (
-    <Container className="header-link-container">
-      <Link className="header-link" to={to}>
+    <Container className="header-nav-link-container">
+      <Link className="header-nav-link" to={to}>
         {children}
       </Link>
     </Container>
   )
 }
 
-HeaderLink.propTypes = {
+HeaderNavLink.propTypes = {
   to: PropTypes.string,
   children: PropTypes.node,
 }
 
-HeaderLink.defaultProps = {
+HeaderNavLink.defaultProps = {
   to: ``,
   children: null,
 }
 
-export default HeaderLink
+export default HeaderNavLink

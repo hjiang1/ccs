@@ -2,27 +2,35 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-import HeaderLink from "./HeaderLink"
+import HeaderHomeLink from "./HeaderHomeLink"
+import HeaderNavLink from "./HeaderNavLink"
 
 const Container = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   background: rebeccapurple;
-  margin-bottom: 1.45rem;
+  padding: 2rem;
+
+  .header-nav-container {
+    display: flex;
+
+    margin: 0 -0.5rem;
+  }
 `
 
-const Header = ({ siteTitle }) => (
-  <Container>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <HeaderLink to="/">{siteTitle}</HeaderLink>
+const Header = () => (
+    <Container>
+      <h1 className="header-title" style={{ margin: 0 }}>
+        <HeaderHomeLink />
       </h1>
-    </div>
-  </Container>
+      <div className="header-nav-container">
+        <HeaderNavLink className="header-nav-link" to="/">About Spectroscopy</HeaderNavLink>
+        <HeaderNavLink className="header-nav-link" to="/">Members</HeaderNavLink>
+        <HeaderNavLink className="header-nav-link" to="/">Contact</HeaderNavLink>
+      </div>
+    </Container>
 )
 
 Header.propTypes = {
