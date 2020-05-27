@@ -79,8 +79,9 @@ const Container = styled.div`
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
 
-  const { location, navigate } = history
-  console.log(location.pathname)
+  // const { location } = history
+  // console.log(location.pathname)
+
   return (
     <Container>
       <header className="header-container">
