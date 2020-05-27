@@ -183,7 +183,7 @@ const Container = styled.div`
         grid-area: intro;
 
         font-size: 1.5rem;
-        line-height: 3rem;
+        line-height: 2em;
         color: #646773;
       }
 

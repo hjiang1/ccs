@@ -28,7 +28,7 @@ const Container = styled.div`
   .lab-description {
     color: #646773;
     font-size: 1.25rem;
-    line-height: 2.5rem;
+    line-height: 2em;
   }
 `
 
