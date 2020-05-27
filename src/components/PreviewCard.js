@@ -16,16 +16,29 @@ const Container = styled.div`
     height: 15rem;
     width: 100%;
     object-fit: cover;
+    @media screen and (max-width: 500px) {
+      height: 10rem;
+    }
   }
 
   .study-title {
     margin: 1rem 2rem;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
+      margin: 1rem;
+    }
   }
 
   .study-detail {
     margin: 0 2rem 1rem;
     font-size: 1.25rem;
     height: 5rem;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
+      margin: 0 1rem 1rem;
+    }
   }
 
   :hover {

@@ -73,10 +73,11 @@ const Carousel = () => {
   const [numSlides, setNumSlides] = useState(
     Math.round(window.innerWidth / 500)
   )
+  const [showDots, setShowDots] = useState(window.innerWidth > 500)
 
   const sliderRef = useRef(null)
   const settings = {
-    dots: true,
+    dots: showDots,
     infinite: true,
     speed: 500,
     slidesToShow: numSlides,
@@ -87,6 +88,12 @@ const Carousel = () => {
   }
 
   const onResize = window.addEventListener("resize", () => {
+    if (showDots && window.innerWidth <= 500) {
+      setShowDots(false)
+    } else if (!showDots && window.innerWidth > 500) {
+      setShowDots(true)
+    }
+
     setNumSlides(Math.round(window.innerWidth / 500))
   })
 

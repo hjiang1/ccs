@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 import Carousel from "../Carousel"
 
@@ -26,6 +27,37 @@ const Container = styled.div`
 
   .preview-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .carousel-wrapper {
+      width: 100%;
+    }
+
+    .see-all-button {
+      margin-top: 3rem;
+      grid-area: button;
+      justify-self: center;
+
+      width: fit-content;
+      height: fit-content;
+      padding: 1rem 2rem;
+
+      color: var(--color-light);
+      background-color: rgba(44, 44, 70);
+      border: 2px solid rgba(44, 44, 70);
+
+      font-weight: bold;
+      text-decoration: none;
+
+      transition: background-color 0.1s ease, color 0.1s ease;
+
+      :hover {
+        color: rgba(44, 44, 70);
+        background-color: transparent;
+      }
+    }
   }
 `
 
@@ -34,7 +66,12 @@ const ProjectsPreview = props => {
     <Container {...props}>
       <h2 className="projects-preview-title">Research Projects</h2>
       <div className="preview-content">
-        <Carousel />
+        <div className="carousel-wrapper">
+          <Carousel />
+        </div>
+        <Link className="see-all-button" to="/projects/">
+          View All Projects
+        </Link>
       </div>
     </Container>
   )
