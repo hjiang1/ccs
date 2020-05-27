@@ -51,10 +51,10 @@ const Footer = () => {
           <h6 className="footer-item-title">
             Center for Clinical Spectroscopy
           </h6>
-          <div className="footer-item-line address1">221 Longwood Ave BLI-236</div>
-          <div className="footer-item-line address2">
-            Boston, MA 02115
+          <div className="footer-item-line address1">
+            221 Longwood Ave BLI-236
           </div>
+          <div className="footer-item-line address2">Boston, MA 02115</div>
           <div className="footer-item-line phone">Phone: (617) 525-5086</div>
           <div className="footer-item-line email">
             Email:{" "}

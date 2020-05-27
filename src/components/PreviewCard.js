@@ -10,6 +10,7 @@ const Container = styled.div`
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 6px 6px #d2d2d2;
+  margin: 1rem;
 
   .card-image {
     height: 15rem;
@@ -24,6 +25,7 @@ const Container = styled.div`
   .study-detail {
     margin: 0 2rem 1rem;
     font-size: 1.25rem;
+    height: 5rem;
   }
 
   :hover {
@@ -34,7 +36,7 @@ const Container = styled.div`
 
 const PreviewCard = ({ title, detail, image }) => {
   return (
-    <Container>
+    <Container className="card">
       <img className="card-image" src={image} alt="mri" />
       <h5 className="study-title">{title}</h5>
       <div className="study-detail">{detail}</div>

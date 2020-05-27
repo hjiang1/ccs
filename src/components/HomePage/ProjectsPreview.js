@@ -1,13 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
 
-import PreviewCard from "../PreviewCard"
-
-import mri from "../../images/mri.png"
-import nfl from "../../images/nfl.png"
-import explosion from "../../images/explosion.png"
-import atp from "../../images/atp.png"
+import Carousel from "../Carousel"
 
 const Container = styled.div`
   display: flex;
@@ -30,31 +24,8 @@ const Container = styled.div`
     }
   }
 
-  .preview-container {
-    display: flex;
-    align-items: center;
-
-    .preview-page-button {
-      height: 2rem;
-      width: 2rem;
-      transition: transform 0.2s ease;
-
-      svg {
-        height: 2rem;
-        width: 2rem;
-      }
-
-      :hover {
-        transform: scale(1.25);
-      }
-    }
-
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
-      margin: 0 1rem;
-    }
+  .preview-content {
+    width: 100%;
   }
 `
 
@@ -62,35 +33,8 @@ const ProjectsPreview = props => {
   return (
     <Container {...props}>
       <h2 className="projects-preview-title">Research Projects</h2>
-      <div className="preview-container">
-        <button className="preview-page-button">
-          <FaAngleLeft />
-        </button>
-        <div className="card-container">
-          <PreviewCard
-            title="Traumatic Brain Injury"
-            detail="Sports-Related Concussion in Children"
-            image={mri}
-          />
-          <PreviewCard
-            title="Traumatic Brain Injury"
-            detail="Repetetive Head Injury in NFL Players"
-            image={nfl}
-          />
-          <PreviewCard
-            title="Traumatic Brain Injury"
-            detail="Mild Traumatic Brain Injury and Post-Traumatic Stress Disorder in Soldiers"
-            image={explosion}
-          />
-          <PreviewCard
-            title="Physiology of the Body"
-            detail="Muscle Energetics"
-            image={atp}
-          />
-        </div>
-        <button className="preview-page-button">
-          <FaAngleRight />
-        </button>
+      <div className="preview-content">
+        <Carousel />
       </div>
     </Container>
   )
