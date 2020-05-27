@@ -84,6 +84,7 @@ const Header = () => {
       <header className="header-container">
         <HeaderHomeLink />
         <div className="header-nav-container">
+          <HeaderNavLink to="/">Home</HeaderNavLink>
           <HeaderNavLink to="/projects/">Projects</HeaderNavLink>
           <HeaderNavLink to="/about-spectroscopy/">
             About Spectroscopy

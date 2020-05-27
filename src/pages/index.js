@@ -93,7 +93,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 6rem;
-    background-color: #edf0f5;
+    background-color: white;
 
     .spectroscopy-preview-title {
       margin: 0 0 4rem;

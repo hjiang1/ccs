@@ -10,7 +10,12 @@ const Container = styled.footer`
       transparent,
       transparent
     ),
-    linear-gradient(175deg, rgba(138, 145, 164, 0.2), transparent, transparent)
+    radial-gradient(
+        farthest-corner at 100% 100%,
+        transparent,
+        transparent,
+        rgba(138, 145, 164, 0.2)
+      )
       #0d0b0e;
   padding: 6rem;
 
