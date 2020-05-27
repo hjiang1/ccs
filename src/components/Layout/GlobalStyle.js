@@ -20,6 +20,36 @@ const GlobalStyle = createGlobalStyle`
       outline: none;
     }
   }
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    margin: 0;
+    font-size: 1rem;
+  }
 `
 
 export default GlobalStyle

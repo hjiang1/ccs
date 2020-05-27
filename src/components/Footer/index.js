@@ -4,8 +4,15 @@ import { Link } from "gatsby"
 
 const Container = styled.footer`
   color: #edf0f5;
-  background-color: #0d0b0e;
-  padding: 2rem 6rem;
+  background: linear-gradient(
+      210deg,
+      rgba(76, 105, 134, 0.65),
+      transparent,
+      transparent
+    ),
+    linear-gradient(175deg, rgba(138, 145, 164, 0.2), transparent, transparent)
+      #0d0b0e;
+  padding: 6rem;
 
   .footer-item-container {
     display: grid;
@@ -40,9 +47,9 @@ const Footer = () => {
     <Container>
       <div className="footer-item-container">
         <div className="footer-item">
-          <h4 className="footer-item-title">
+          <h6 className="footer-item-title">
             Center for Clinical Spectroscopy
-          </h4>
+          </h6>
           <div className="footer-item-line">221 Longwood Ave</div>
           <div className="footer-item-line">Boston, MA 02115</div>
           <div className="footer-item-line">Phone: (123)456-7890</div>
@@ -59,7 +66,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-item">
-          <h4 className="footer-item-title">Affiliates</h4>
+          <h6 className="footer-item-title">Affiliates</h6>
           <div className="footer-item-line">
             <a
               className="footer-link"
@@ -82,7 +89,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-item">
-          <h4 className="footer-item-title">Site Navigation</h4>
+          <h6 className="footer-item-title">Site Navigation</h6>
           <div className="footer-item-line">
             <Link className="footer-link" to="/projects/">
               Projects
