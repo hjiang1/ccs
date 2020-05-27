@@ -18,6 +18,8 @@ const Container = styled.div`
     background: transparent;
     padding: 0 2rem;
 
+    z-index: 1000;
+
     .header-nav-container {
       display: flex;
       align-items: center;
