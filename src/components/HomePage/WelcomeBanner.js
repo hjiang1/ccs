@@ -41,7 +41,6 @@ const Container = styled.div`
   .about-button {
     margin-top: 6rem;
 
-    border-radius: 5px;
     border: 2px solid #e1e6f0;
     padding: 1rem 4rem;
     font-weight: bold;

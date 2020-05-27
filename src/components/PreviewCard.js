@@ -6,7 +6,6 @@ const Container = styled.div`
   flex-direction: column;
   background-color: white;
   border: 1px solid #d2d2d2;
-  border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
