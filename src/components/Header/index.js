@@ -65,6 +65,7 @@ const Container = styled.div`
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s linear;
+    z-index: 10;
 
     @media screen and (min-width: 1001px) {
       display: none;
