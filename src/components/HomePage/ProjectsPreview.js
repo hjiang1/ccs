@@ -24,6 +24,10 @@ const Container = styled.div`
   .projects-preview-title {
     margin: 0 0 4rem;
     color: #0d0b0e;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 2rem;
+    }
   }
 
   .preview-container {

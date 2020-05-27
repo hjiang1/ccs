@@ -16,10 +16,19 @@ const Container = styled.div`
     padding: 3rem;
   }
 
+  @media screen and (max-width: 700px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .members-preview-title {
     margin: 0 0 4rem;
     color: #0d0b0e;
     grid-area: title;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 2rem;
+    }
   }
 
   .members-image-container {
@@ -53,6 +62,7 @@ const Container = styled.div`
       font-size: 2rem;
       font-weight: bold;
 
+      text-align: center;
       text-decoration: none;
       cursor: pointer;
 

@@ -20,6 +20,10 @@ const Container = styled.div`
     margin: 0 0 4rem;
     color: #0d0b0e;
     grid-area: title;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 2rem;
+    }
   }
 
   .spectroscopy-preview-content {
@@ -43,6 +47,7 @@ const Container = styled.div`
     }
 
     .card-image {
+      max-width: 80vw;
       grid-area: image;
     }
 
@@ -52,6 +57,11 @@ const Container = styled.div`
       font-size: 1.5rem;
       line-height: 2em;
       color: #646773;
+
+      @media screen and (max-width: 700px) {
+        font-size: 1.25rem;
+        line-height: 1.5em;
+      }
     }
 
     .learn-more-button {

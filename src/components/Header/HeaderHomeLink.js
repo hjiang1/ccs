@@ -20,6 +20,10 @@ const Container = styled.div`
       font-size: 1.15rem;
       width: 10rem;
       margin-left: 1rem;
+
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
     }
   }
 `

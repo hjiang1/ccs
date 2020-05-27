@@ -28,6 +28,14 @@ const Container = styled.div`
     margin: 0;
     font-size: 4rem;
     text-align: center;
+
+    @media screen and (max-width: 700px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+    }
   }
 
   .about-button {
@@ -46,6 +54,11 @@ const Container = styled.div`
     transition-property: color, background-color;
     transition-duration: 0.2s;
     transition-timing-function: ease;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
+      padding: 1rem 2rem;
+    }
 
     :hover {
       background-color: rgba(255, 255, 255, 0.15);
