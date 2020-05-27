@@ -15,10 +15,8 @@ const Container = styled.div`
     align-items: center;
 
     height: 6rem;
-    background: transparent;
+    background: linear-gradient(15deg, rgba(0, 0, 0), rgba(44, 44, 70));
     padding: 0 2rem;
-
-    z-index: 1000;
 
     .header-nav-container {
       display: flex;

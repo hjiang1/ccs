@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <GlobalStyle />
-      <Header />
+      <Header home />
       <Main>{children}</Main>
       <Footer />
     </Fragment>
