@@ -57,7 +57,7 @@ const Footer = () => {
           </h6>
           <div className="footer-item-line">221 Longwood Ave</div>
           <div className="footer-item-line">Boston, MA 02115</div>
-          <div className="footer-item-line">Phone: (123)456-7890</div>
+          <div className="footer-item-line">Phone: (123) 456-7890</div>
           <div className="footer-item-line">
             Email:{" "}
             <a

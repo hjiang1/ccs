@@ -172,7 +172,7 @@ const Container = styled.div`
 `
 
 const IndexPage = () => {
-  const scrollTo = () => {
+  const scrollToContent = () => {
     document.getElementsByClassName("projects-preview")[0].scrollIntoView({
       behavior: "smooth"
     })
@@ -184,7 +184,7 @@ const IndexPage = () => {
       <Container>
         <div className="welcome-banner">
           <h1 className="page-title">Center for Clinical Spectroscopy</h1>
-          <button className="down-button" onClick={scrollTo}>
+          <button className="down-button" onClick={scrollToContent}>
             <FaAngleDown />
           </button>
         </div>
