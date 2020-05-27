@@ -33,7 +33,7 @@ const HeaderNavLink = ({ to, children }) => {
   return (
     <Container className="header-nav-link-container">
       <Link className="header-nav-link" to={to}>
-        <div classname="link-text">{children}</div>
+        <div className="link-text">{children}</div>
       </Link>
       <div className="link-highlight" />
     </Container>
