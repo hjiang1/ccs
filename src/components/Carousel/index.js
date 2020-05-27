@@ -71,9 +71,11 @@ const PrevArrow = props => {
 
 const Carousel = () => {
   const [numSlides, setNumSlides] = useState(
-    Math.round(window.innerWidth / 500)
+    window ? Math.round(window.innerWidth / 500) : 1
   )
-  const [showDots, setShowDots] = useState(window.innerWidth > 500)
+  const [showDots, setShowDots] = useState(
+    window ? window.innerWidth > 500 : true
+  )
 
   const sliderRef = useRef(null)
   const settings = {
@@ -87,7 +89,7 @@ const Carousel = () => {
     nextArrow: <NextArrow />,
   }
 
-  const onResize = window.addEventListener("resize", () => {
+  const setSizing = () => {
     if (showDots && window.innerWidth <= 500) {
       setShowDots(false)
     } else if (!showDots && window.innerWidth > 500) {
@@ -95,9 +97,12 @@ const Carousel = () => {
     }
 
     setNumSlides(Math.round(window.innerWidth / 500))
-  })
+  }
+  const onWindowLoad = window.addEventListener("load", setSizing)
+  const onResize = window.addEventListener("resize", setSizing)
 
   useEffect(() => () => {
+    window.removeEventListener("resize", onWindowLoad)
     window.removeEventListener("resize", onResize)
   })
 
