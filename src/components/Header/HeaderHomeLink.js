@@ -5,10 +5,17 @@ import styled from "styled-components"
 
 const Container = styled.div`
   .header-home-link {
-    color: #edf0f5;
+    color: #d1d7e3;
     text-decoration: none;
     display: flex;
     align-items: center;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 
     .logo {
       font-weight: bold;

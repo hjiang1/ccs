@@ -10,7 +10,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 6rem;
-  background-color: #e1e4ed;
+  background-color: white;
 
   @media screen and (max-width: 1200px) {
     padding: 3rem;
@@ -58,9 +58,13 @@ const Container = styled.div`
         rgba(0, 0, 0, 0.75),
         rgba(44, 44, 70, 0.75)
       );
-      color: white;
+      color: #d1d7e3;
       font-size: 2rem;
       font-weight: bold;
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.5rem;
+      }
 
       text-align: center;
       text-decoration: none;
