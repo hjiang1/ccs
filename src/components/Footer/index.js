@@ -5,18 +5,13 @@ import { Link } from "gatsby"
 const Container = styled.footer`
   color: #edf0f5;
   background: linear-gradient(
-    35deg,
-    transparent,
-    transparent 30%,
-    rgba(44, 44, 70)
-  ),
-  linear-gradient(
-    190deg,
-    transparent,
-    transparent 50%,
-    rgba(33, 33, 33)
-  ),
-  #0d0b0e;
+      35deg,
+      transparent,
+      transparent 30%,
+      rgba(44, 44, 70)
+    ),
+    linear-gradient(190deg, transparent, transparent 50%, rgba(33, 33, 33)),
+    #0d0b0e;
   padding: 6rem;
 
   .footer-item-container {
@@ -57,7 +52,7 @@ const Footer = () => {
           </h6>
           <div className="footer-item-line">221 Longwood Ave</div>
           <div className="footer-item-line">Boston, MA 02115</div>
-          <div className="footer-item-line">Phone: (123)456-7890</div>
+          <div className="footer-item-line">Phone: (123) 456-7890</div>
           <div className="footer-item-line">
             Email:{" "}
             <a

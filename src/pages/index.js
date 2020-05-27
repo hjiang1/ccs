@@ -28,12 +28,7 @@ const Container = styled.div`
         transparent 30%,
         rgba(44, 44, 70)
       ),
-      linear-gradient(
-        190deg,
-        transparent,
-        transparent 50%,
-        rgba(33, 33, 33)
-      ),
+      linear-gradient(190deg, transparent, transparent 50%, rgba(33, 33, 33)),
       url(${brain});
     background-position: center;
     background-size: cover;
@@ -172,9 +167,9 @@ const Container = styled.div`
 `
 
 const IndexPage = () => {
-  const scrollTo = () => {
+  const scrollToContent = () => {
     document.getElementsByClassName("projects-preview")[0].scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     })
   }
 
@@ -184,7 +179,7 @@ const IndexPage = () => {
       <Container>
         <div className="welcome-banner">
           <h1 className="page-title">Center for Clinical Spectroscopy</h1>
-          <button className="down-button" onClick={scrollTo}>
+          <button className="down-button" onClick={scrollToContent}>
             <FaAngleDown />
           </button>
         </div>
