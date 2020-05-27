@@ -11,8 +11,9 @@ const Container = styled.div`
   border-bottom: 1px solid #edf0f5;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0),
-    rgba(44, 44, 70)
+    black,
+    black 30%,
+    rgba(44, 44, 70, 0.8)
   );
 
   .dropdown-link {
@@ -24,7 +25,12 @@ const Container = styled.div`
   }
 
   :hover {
-    background: rgba(44, 44, 70);
+    background: linear-gradient(
+      to right,
+      rgba(44, 44, 70),
+      rgba(44, 44, 70) 30%,
+      rgba(44, 44, 70, 0.8)
+    );
   }
 `
 
