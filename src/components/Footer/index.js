@@ -7,6 +7,10 @@ const Container = styled.footer`
   background: linear-gradient(15deg, rgba(0, 0, 0), rgba(44, 44, 70));
   padding: 6rem;
 
+  @media screen and (max-width: 500px) {
+    padding: 3rem;
+  }
+
   .footer-item-container {
     display: grid;
     grid-template-columns: 1fr max-content max-content;
