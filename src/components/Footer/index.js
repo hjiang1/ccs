@@ -8,13 +8,13 @@ const Container = styled.footer`
     35deg,
     transparent,
     transparent 30%,
-    rgba(76, 105, 134, 0.4)
+    rgba(44, 44, 70)
   ),
   linear-gradient(
-    195deg,
+    190deg,
     transparent,
     transparent 50%,
-    rgba(138, 145, 164, 0.2)
+    rgba(33, 33, 33)
   ),
   #0d0b0e;
   padding: 6rem;
