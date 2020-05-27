@@ -10,7 +10,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 6rem;
-  background-color: white;
+  background-color: #d1d7e3;
 
   @media screen and (max-width: 1200px) {
     padding: 3rem;
@@ -72,7 +72,7 @@ const Container = styled.div`
       height: fit-content;
       padding: 1rem 2rem;
 
-      color: #edf0f5;
+      color: #d1d7e3;
       border-radius: 5px;
       background-color: rgba(44, 44, 70);
       border: 2px solid rgba(44, 44, 70);
