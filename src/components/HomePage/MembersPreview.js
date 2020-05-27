@@ -58,7 +58,7 @@ const Container = styled.div`
         rgba(0, 0, 0, 0.75),
         rgba(44, 44, 70, 0.75)
       );
-      color: #d1d7e3;
+      color: #e1e6f0;
       font-size: 2rem;
       font-weight: bold;
 

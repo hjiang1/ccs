@@ -6,15 +6,15 @@ import styled from "styled-components"
 const Container = styled.div`
   display: flex;
   margin-bottom: -1px;
-  background-color: #d1d7e3;
+  background-color: #e1e6f0;
   border-top: 1px solid gray;
-  border-bottom: 1px solid #d1d7e3;
+  border-bottom: 1px solid #e1e6f0;
   background: linear-gradient(to right, rgba(20, 20, 30), rgba(44, 44, 70));
 
   .dropdown-link {
     display: flex;
     align-items: center;
-    color: #d1d7e3;
+    color: #e1e6f0;
     padding: 2rem;
     text-decoration: none;
     font-weight: bold;

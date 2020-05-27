@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const Container = styled.footer`
-  color: #d1d7e3;
+  color: #e1e6f0;
   background: linear-gradient(15deg, rgba(0, 0, 0), rgba(44, 44, 70));
   padding: 6rem;
 
@@ -32,7 +32,7 @@ const Container = styled.footer`
       }
 
       .footer-link {
-        color: #d1d7e3;
+        color: #e1e6f0;
         text-decoration: none;
 
         :hover {
