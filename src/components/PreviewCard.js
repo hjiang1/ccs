@@ -5,11 +5,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: white;
-  border-radius: 5px;
+  border: 1px solid #d2d2d2;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px #d2d2d2;
 
   .card-image {
     height: 15rem;
