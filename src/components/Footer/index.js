@@ -89,6 +89,11 @@ const Footer = () => {
             </Link>
           </div>
           <div className="footer-item-line">
+            <Link className="footer-link" to="/the-lab/">
+              The Lab
+            </Link>
+          </div>
+          <div className="footer-item-line">
             <Link className="footer-link" to="/projects/">
               Projects
             </Link>

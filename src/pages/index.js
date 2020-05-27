@@ -20,6 +20,7 @@ const Container = styled.div`
 
   .welcome-banner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -40,6 +41,29 @@ const Container = styled.div`
       margin: 0;
       font-size: 4rem;
       text-align: center;
+    }
+
+    .about-button {
+      margin-top: 6rem;
+
+      border-radius: 5px;
+      border: 2px solid white;
+      padding: 1rem 4rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: rgba(44, 44, 70);
+      background-color: white;
+      text-decoration: none;
+      cursor: pointer;
+
+      transition-property: color, background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+
+      :hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: white;
+      }
     }
 
     .down-button {
@@ -240,6 +264,9 @@ const IndexPage = () => {
       <Container>
         <div className="welcome-banner">
           <h1 className="page-title">Center for Clinical Spectroscopy</h1>
+          <Link className="about-button" to="/the-lab/">
+            About The Lab
+          </Link>
           <button className="down-button" onClick={scrollToContent}>
             <FaAngleDown />
           </button>
