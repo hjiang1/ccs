@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
+import { FaAngleLeft, FaAngleRight, FaAngleDown } from "react-icons/fa"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -23,16 +23,16 @@ const Container = styled.div`
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(
-        210deg,
-        rgba(76, 105, 134, 0.65),
+        35deg,
         transparent,
-        transparent
+        transparent 30%,
+        rgba(76, 105, 134, 0.4)
       ),
       linear-gradient(
-        345deg,
-        rgba(138, 145, 164, 0.35),
+        195deg,
         transparent,
-        transparent
+        transparent 50%,
+        rgba(138, 145, 164, 0.2)
       ),
       url(${brain});
     background-position: center;
@@ -44,6 +44,31 @@ const Container = styled.div`
       font-size: 4rem;
       text-align: center;
     }
+
+    .down-button {
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      bottom: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 3px solid #edf0f5;
+      border-radius: 50%;
+
+      transition: transform 0.2s ease;
+
+      svg {
+        color: #edf0f5;
+        width: 2rem;
+        height: 2rem;
+      }
+
+      :hover {
+        transform: scale(1.05);
+      }
+    }
   }
 
   .projects-preview {
@@ -52,7 +77,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 6rem 3rem;
-    background-color: #a3a9b8;
+    background-color: #e1e4ed;
 
     .projects-preview-title {
       margin: 0 0 4rem;
@@ -146,62 +171,73 @@ const Container = styled.div`
   }
 `
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Container>
-      <div className="welcome-banner">
-        <h2 className="page-title">Center for Clinical Spectroscopy</h2>
-      </div>
-      <div className="projects-preview">
-        <h2 className="projects-preview-title">Research Projects</h2>
-        <div className="preview-container">
-          <button className="preview-page-button">
-            <FaAngleLeft />
-          </button>
-          <div className="card-container">
-            <PreviewCard
-              title="Traumatic Brain Injury"
-              detail="Sports-Related Concussion in Children"
-              image={mri}
-            />
-            <PreviewCard
-              title="Traumatic Brain Injury"
-              detail="Repetetive Head Injury in NFL Players"
-              image={nfl}
-            />
-            <PreviewCard
-              title="Traumatic Brain Injury"
-              detail="Mild Traumatic Brain Injury and Post-Traumatic Stress Disorder in Soldiers"
-              image={explosion}
-            />
-            <PreviewCard
-              title="Physiology of the Body"
-              detail="Muscle Energetics"
-              image={atp}
-            />
-          </div>
-          <button className="preview-page-button">
-            <FaAngleRight />
+const IndexPage = () => {
+  const scrollTo = () => {
+    document.getElementsByClassName("projects-preview")[0].scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Container>
+        <div className="welcome-banner">
+          <h1 className="page-title">Center for Clinical Spectroscopy</h1>
+          <button className="down-button" onClick={scrollTo}>
+            <FaAngleDown />
           </button>
         </div>
-      </div>
-      <div className="spectroscopy-preview">
-        <h2 className="spectroscopy-preview-title">About Spectroscopy</h2>
-        <div className="spectroscopy-preview-content">
-          <img className="card-image" src={spectrum} alt="spectrum" />
-          <div className="spectroscopy-intro">
-            Magnetic resonance spectroscopy (MRS) is an analytical tool that
-            detects radio frequency electromagnetic signals that are produced by
-            the atomic nuclei within molecules. It can be used to obtain in situ
-            concentration measures for certain chemicals in complex samples,
-            such as the living brain.
+        <div className="projects-preview">
+          <h2 className="projects-preview-title">Research Projects</h2>
+          <div className="preview-container">
+            <button className="preview-page-button">
+              <FaAngleLeft />
+            </button>
+            <div className="card-container">
+              <PreviewCard
+                title="Traumatic Brain Injury"
+                detail="Sports-Related Concussion in Children"
+                image={mri}
+              />
+              <PreviewCard
+                title="Traumatic Brain Injury"
+                detail="Repetetive Head Injury in NFL Players"
+                image={nfl}
+              />
+              <PreviewCard
+                title="Traumatic Brain Injury"
+                detail="Mild Traumatic Brain Injury and Post-Traumatic Stress Disorder in Soldiers"
+                image={explosion}
+              />
+              <PreviewCard
+                title="Physiology of the Body"
+                detail="Muscle Energetics"
+                image={atp}
+              />
+            </div>
+            <button className="preview-page-button">
+              <FaAngleRight />
+            </button>
           </div>
-          <button className="learn-more-button">Learn More</button>
         </div>
-      </div>
-    </Container>
-  </Layout>
-)
+        <div className="spectroscopy-preview">
+          <h2 className="spectroscopy-preview-title">About Spectroscopy</h2>
+          <div className="spectroscopy-preview-content">
+            <img className="card-image" src={spectrum} alt="spectrum" />
+            <div className="spectroscopy-intro">
+              Magnetic resonance spectroscopy (MRS) is an analytical tool that
+              detects radio frequency electromagnetic signals that are produced
+              by the atomic nuclei within molecules. It can be used to obtain in
+              situ concentration measures for certain chemicals in complex
+              samples, such as the living brain.
+            </div>
+            <button className="learn-more-button">Learn More</button>
+          </div>
+        </div>
+      </Container>
+    </Layout>
+  )
+}
 
 export default IndexPage
