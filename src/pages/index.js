@@ -100,6 +100,10 @@ const Container = styled.div`
     padding: 6rem 3rem;
     background-color: #e1e4ed;
 
+    @media screen and (max-width: 1200px) {
+      padding: 3rem;
+    }
+
     .projects-preview-title {
       margin: 0 0 4rem;
       color: #0d0b0e;
@@ -141,6 +145,10 @@ const Container = styled.div`
     padding: 6rem;
     background-color: white;
 
+    @media screen and (max-width: 1200px) {
+      padding: 3rem;
+    }
+
     .spectroscopy-preview-title {
       margin: 0 0 4rem;
       color: #0d0b0e;
@@ -156,6 +164,16 @@ const Container = styled.div`
         "image button";
       grid-gap: 4rem;
       grid-row-gap: 2rem;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr max-content max-content;
+        grid-template-areas:
+          "image"
+          "intro"
+          "button";
+        justify-items: center;
+      }
 
       .card-image {
         grid-area: image;
@@ -204,6 +222,10 @@ const Container = styled.div`
     padding: 6rem;
     background-color: #e1e4ed;
 
+    @media screen and (max-width: 1200px) {
+      padding: 3rem;
+    }
+
     .members-preview-title {
       margin: 0 0 4rem;
       color: #0d0b0e;
@@ -211,7 +233,6 @@ const Container = styled.div`
     }
 
     .members-image-container {
-      width: calc(100% - 4rem);
       position: relative;
 
       display: flex;
@@ -220,6 +241,8 @@ const Container = styled.div`
 
       .members-image {
         width: 100%;
+        max-height: 30rem;
+        object-fit: cover;
       }
 
       .members-button {
