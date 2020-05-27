@@ -5,18 +5,18 @@ import { Link } from "gatsby"
 const Container = styled.footer`
   color: #edf0f5;
   background: linear-gradient(
-      210deg,
-      rgba(76, 105, 134, 0.65),
-      transparent,
-      transparent
-    ),
-    radial-gradient(
-        farthest-corner at 100% 100%,
-        transparent,
-        transparent,
-        rgba(138, 145, 164, 0.2)
-      )
-      #0d0b0e;
+    35deg,
+    transparent,
+    transparent 30%,
+    rgba(76, 105, 134, 0.4)
+  ),
+  linear-gradient(
+    195deg,
+    transparent,
+    transparent 50%,
+    rgba(138, 145, 164, 0.2)
+  ),
+  #0d0b0e;
   padding: 6rem;
 
   .footer-item-container {
@@ -95,6 +95,11 @@ const Footer = () => {
         </div>
         <div className="footer-item">
           <h6 className="footer-item-title">Site Navigation</h6>
+          <div className="footer-item-line">
+            <Link className="footer-link" to="/">
+              Home
+            </Link>
+          </div>
           <div className="footer-item-line">
             <Link className="footer-link" to="/projects/">
               Projects
