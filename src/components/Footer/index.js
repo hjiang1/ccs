@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const Container = styled.footer`
-  color: #e1e6f0;
+  color: var(--color-light);
   background: linear-gradient(15deg, rgba(0, 0, 0), rgba(44, 44, 70));
   padding: 6rem;
 
@@ -32,7 +32,7 @@ const Container = styled.footer`
       }
 
       .footer-link {
-        color: #e1e6f0;
+        color: var(--color-light);
         text-decoration: none;
 
         :hover {
@@ -51,9 +51,9 @@ const Footer = () => {
           <h6 className="footer-item-title">
             Center for Clinical Spectroscopy
           </h6>
-          <div className="footer-item-line address1">221 Longwood Ave</div>
+          <div className="footer-item-line address1">221 Longwood Ave BLI-236</div>
           <div className="footer-item-line address2">
-            BLI-236 Boston, MA 02115
+            Boston, MA 02115
           </div>
           <div className="footer-item-line phone">Phone: (617) 525-5086</div>
           <div className="footer-item-line email">

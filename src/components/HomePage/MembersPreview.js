@@ -23,7 +23,7 @@ const Container = styled.div`
 
   .members-preview-title {
     margin: 0 0 4rem;
-    color: #0d0b0e;
+    color: var(--title-color);
     grid-area: title;
 
     @media screen and (max-width: 1200px) {
@@ -58,7 +58,7 @@ const Container = styled.div`
         rgba(0, 0, 0, 0.75),
         rgba(44, 44, 70, 0.75)
       );
-      color: #e1e6f0;
+      color: var(--color-light);
       font-size: 2rem;
       font-weight: bold;
 

@@ -10,7 +10,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 6rem;
-  background-color: #e1e6f0;
+  background-color: var(--color-light);
 
   @media screen and (max-width: 1200px) {
     padding: 3rem;
@@ -18,7 +18,7 @@ const Container = styled.div`
 
   .spectroscopy-preview-title {
     margin: 0 0 4rem;
-    color: #0d0b0e;
+    color: var(--title-color);
     grid-area: title;
 
     @media screen and (max-width: 1200px) {
@@ -56,7 +56,7 @@ const Container = styled.div`
 
       font-size: 1.5rem;
       line-height: 2em;
-      color: #646773;
+      color: var(--text-color);
 
       @media screen and (max-width: 700px) {
         font-size: 1.25rem;
@@ -72,7 +72,7 @@ const Container = styled.div`
       height: fit-content;
       padding: 1rem 2rem;
 
-      color: #e1e6f0;
+      color: var(--color-light);
       background-color: rgba(44, 44, 70);
       border: 2px solid rgba(44, 44, 70);
 
