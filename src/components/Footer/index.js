@@ -5,18 +5,13 @@ import { Link } from "gatsby"
 const Container = styled.footer`
   color: #edf0f5;
   background: linear-gradient(
-    35deg,
-    transparent,
-    transparent 30%,
-    rgba(44, 44, 70)
-  ),
-  linear-gradient(
-    190deg,
-    transparent,
-    transparent 50%,
-    rgba(33, 33, 33)
-  ),
-  #0d0b0e;
+      35deg,
+      transparent,
+      transparent 30%,
+      rgba(44, 44, 70)
+    ),
+    linear-gradient(190deg, transparent, transparent 50%, rgba(33, 33, 33)),
+    #0d0b0e;
   padding: 6rem;
 
   .footer-item-container {

@@ -28,12 +28,7 @@ const Container = styled.div`
         transparent 30%,
         rgba(44, 44, 70)
       ),
-      linear-gradient(
-        190deg,
-        transparent,
-        transparent 50%,
-        rgba(33, 33, 33)
-      ),
+      linear-gradient(190deg, transparent, transparent 50%, rgba(33, 33, 33)),
       url(${brain});
     background-position: center;
     background-size: cover;
@@ -174,7 +169,7 @@ const Container = styled.div`
 const IndexPage = () => {
   const scrollToContent = () => {
     document.getElementsByClassName("projects-preview")[0].scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     })
   }
 
