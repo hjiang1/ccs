@@ -8,7 +8,7 @@ const Container = styled.div`
   margin: 0 0.5rem;
 
   .header-nav-link {
-    color: #e1e6f0;
+    color: var(--color-light);
     text-decoration: none;
     font-weight: bold;
   }
@@ -17,7 +17,7 @@ const Container = styled.div`
     margin-top: 2px;
     width: 0;
     height: 2px;
-    background-color: #e1e6f0;
+    background-color: var(--color-light);
     position: absolute;
     transition: width 0.1s ease;
   }

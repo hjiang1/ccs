@@ -3,6 +3,22 @@ import { createGlobalStyle } from "styled-components"
 const GlobalStyle = createGlobalStyle`
   html {
     font-family: Roboto, sans-serif;
+
+    --spacing-modifier: 3;
+
+    @media screen and (max-width: 1000px) {
+      --spacing-modifier: 2;
+    }
+
+    @media screen and (max-width: 700px) {
+      --spacing-modifier: 1;
+    }
+
+    --title-color: #0f0721;
+    --background-color-alternate: #e1e4ed;
+    --text-color: #646773;
+    --color-light: #e1e6f0;
+
   }
 
   body {

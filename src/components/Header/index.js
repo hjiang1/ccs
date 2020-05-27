@@ -41,7 +41,7 @@ const Container = styled.div`
           left: 0;
           height: 2rem;
           width: 2rem;
-          color: #e1e6f0;
+          color: var(--color-light);
           opacity: 0;
           transform: scale(0);
           transition: opacity 0.2s ease, transform 0.2s ease;
