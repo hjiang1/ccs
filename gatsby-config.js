@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Center for Clinical Spectroscopy`,
+    description: `The Center for Clinical Spectroscopy is an affiliate of Brigham and Women's Hospital and Harvard Medical School in Boston, MA and specializes in clinical applications of magnetic resonance spectroscopy.`,
+    author: `Sam Jiang`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
