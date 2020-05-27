@@ -42,9 +42,9 @@ const Contact = () => (
           <div className="contact-info">
             <div className="section-title">Address</div>
             <div className="address-item">Center for Clinical Spectroscopy</div>
-            <div className="address-item address1">221 Longwood Ave</div>
+            <div className="address-item address1">221 Longwood Ave BLI-236</div>
             <div className="address-item address2">
-              BLI-236 Boston, MA 02115
+              Boston, MA 02115
             </div>
             <div className="section-title">Contact Information</div>
             <div className="contact-info-item phone">Phone: (617) 525-5086</div>
