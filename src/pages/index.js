@@ -52,7 +52,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 6rem 3rem;
-    background-color: #a3a9b8;
+    background-color: #e1e4ed;
 
     .projects-preview-title {
       margin: 0 0 4rem;
@@ -151,7 +151,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Container>
       <div className="welcome-banner">
-        <h2 className="page-title">Center for Clinical Spectroscopy</h2>
+        <h1 className="page-title">Center for Clinical Spectroscopy</h1>
       </div>
       <div className="projects-preview">
         <h2 className="projects-preview-title">Research Projects</h2>
