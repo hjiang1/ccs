@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import PreviewCard from "../components/PreviewCard"
 import brain from "../images/ax-brain.png"
 
