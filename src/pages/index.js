@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -53,14 +54,35 @@ const Container = styled.div`
     background-color: #a3a9b8;
 
     .projects-preview-title {
-      margin: 0 0 3rem;
+      margin: 0 0 4rem;
       color: #0d0b0e;
     }
 
     .preview-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
+      display: flex;
+      align-items: center;
+
+      .preview-page-button {
+        height: 2rem;
+        width: 2rem;
+        transition: transform 0.2s ease;
+
+        svg {
+          height: 2rem;
+          width: 2rem;
+        }
+
+        :hover {
+          transform: scale(1.25);
+        }
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        margin: 0 1rem;
+      }
     }
   }
 `
@@ -75,26 +97,34 @@ const IndexPage = () => (
       <div className="projects-preview">
         <h2 className="projects-preview-title">Research Projects</h2>
         <div className="preview-container">
-          <PreviewCard
-            title="Traumatic Brain Injury"
-            detail="Sports-Related Concussion in Children"
-            image={mri}
-          />
-          <PreviewCard
-            title="Traumatic Brain Injury"
-            detail="Repetetive Head Injury in NFL Players"
-            image={nfl}
-          />
-          <PreviewCard
-            title="Traumatic Brain Injury"
-            detail="Mild Traumatic Brain Injury and Post-Traumatic Stress Disorder in Soldiers"
-            image={explosion}
-          />
-          <PreviewCard
-            title="Physiology of the Body"
-            detail="Muscle Energetics"
-            image={atp}
-          />
+          <button className="preview-page-button">
+            <FaAngleLeft />
+          </button>
+          <div className="card-container">
+            <PreviewCard
+              title="Traumatic Brain Injury"
+              detail="Sports-Related Concussion in Children"
+              image={mri}
+            />
+            <PreviewCard
+              title="Traumatic Brain Injury"
+              detail="Repetetive Head Injury in NFL Players"
+              image={nfl}
+            />
+            <PreviewCard
+              title="Traumatic Brain Injury"
+              detail="Mild Traumatic Brain Injury and Post-Traumatic Stress Disorder in Soldiers"
+              image={explosion}
+            />
+            <PreviewCard
+              title="Physiology of the Body"
+              detail="Muscle Energetics"
+              image={atp}
+            />
+          </div>
+          <button className="preview-page-button">
+            <FaAngleRight />
+          </button>
         </div>
       </div>
     </Container>

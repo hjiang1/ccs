@@ -24,6 +24,7 @@ const Container = styled.div`
 
   .study-detail {
     margin: 0 2rem 1rem;
+    font-size: 1.25rem;
   }
 
   :hover {
@@ -36,7 +37,7 @@ const PreviewCard = ({ title, detail, image }) => {
     <Container>
       <img className="card-image" src={image} alt="mri" />
       <h5 className="study-title">{title}</h5>
-      <h6 className="study-detail">{detail}</h6>
+      <div className="study-detail">{detail}</div>
     </Container>
   )
 }
