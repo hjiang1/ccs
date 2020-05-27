@@ -58,9 +58,9 @@ const Container = styled.div`
   }
 `
 
-const ProjectsPreview = () => {
+const ProjectsPreview = (props) => {
   return (
-    <Container>
+    <Container {...props}>
       <h2 className="projects-preview-title">Research Projects</h2>
       <div className="preview-container">
         <button className="preview-page-button">

@@ -81,7 +81,7 @@ const Container = styled.div`
     transition: transform 0.2s ease;
 
     svg {
-      color: #d1d7e3;
+      color: white;
       width: 2rem;
       height: 2rem;
     }
