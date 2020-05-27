@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import cn from "classnames"
 import { FaBars, FaTimes } from "react-icons/fa"
-
+import { globalHistory as history } from "@reach/router"
 import HeaderHomeLink from "./HeaderHomeLink"
 import HeaderNavLink from "./HeaderNavLink"
 import DropdownLink from "./DropdownLink"
@@ -15,7 +15,7 @@ const Container = styled.div`
     align-items: center;
 
     height: 6rem;
-    background: linear-gradient(15deg, rgba(0, 0, 0), rgba(44, 44, 70));
+    background: rgba(44, 44, 70);
     padding: 0 2rem;
 
     .header-nav-container {
@@ -79,6 +79,8 @@ const Container = styled.div`
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
 
+  const { location, navigate } = history
+  console.log(location.pathname)
   return (
     <Container>
       <header className="header-container">
