@@ -62,6 +62,10 @@ const Container = styled.div`
       font-size: 2rem;
       font-weight: bold;
 
+      @media screen and (max-width: 500px) {
+        font-size: 1.5rem;
+      }
+
       text-align: center;
       text-decoration: none;
       cursor: pointer;
