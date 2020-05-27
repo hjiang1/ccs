@@ -102,6 +102,8 @@ const Header = () => {
         </div>
       </header>
       <div className={cn("dropdown-container", { open: dropdownOpen })}>
+        <DropdownLink to="/">Home</DropdownLink>
+        <DropdownLink to="/the-lab/">The Lab</DropdownLink>
         <DropdownLink to="/projects/">Projects</DropdownLink>
         <DropdownLink to="/about-spectroscopy/">
           About Spectroscopy
