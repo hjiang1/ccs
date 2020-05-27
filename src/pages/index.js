@@ -210,18 +210,21 @@ const Container = styled.div`
       grid-area: title;
     }
 
-    .members-image {
-      background-image: url(${building});
-
+    .members-image-container {
       width: calc(100% - 4rem);
-      height: 40rem;
-      background-size: cover;
+      position: relative;
 
       display: flex;
       justify-content: center;
       align-items: center;
 
+      .members-image {
+        width: 100%;
+      }
+
       .members-button {
+        position: absolute;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -324,7 +327,8 @@ const IndexPage = () => {
         </div>
         <div className="members-preview">
           <h2 className="members-preview-title">Members</h2>
-          <div className="members-image">
+          <div className="members-image-container">
+            <img className="members-image" src={building} alt="building" />
             <Link className="members-button" to="/members/">
               Meet Our Members
             </Link>
