@@ -8,8 +8,8 @@ const Container = styled.div`
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.2s ease;
-  box-shadow: 8px 8px gray;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
 
   .card-image {
     height: 15rem;
@@ -28,7 +28,8 @@ const Container = styled.div`
   }
 
   :hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    box-shadow: 8px 7px rgba(0, 0, 0, 0.2);
   }
 `
 
