@@ -20,7 +20,11 @@ const Container = styled.footer`
     .footer-item {
       .footer-item-title {
         margin-top: 0;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .footer-item-line {
+        margin-top: 0.3rem;
       }
 
       .footer-link {
