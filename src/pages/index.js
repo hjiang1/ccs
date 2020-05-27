@@ -167,7 +167,7 @@ const Container = styled.div`
 
       @media screen and (max-width: 1200px) {
         grid-template-columns: auto;
-        grid-template-rows: 1fr max-content max-content;
+        grid-template-rows: auto max-content max-content;
         grid-template-areas:
           "image"
           "intro"
@@ -177,7 +177,6 @@ const Container = styled.div`
 
       .card-image {
         grid-area: image;
-        max-width: 40vw;
       }
 
       .spectroscopy-intro {
@@ -335,13 +334,12 @@ const IndexPage = () => {
           <div className="spectroscopy-preview-content">
             <img className="card-image" src={spectrum} alt="spectrum" />
             <div className="spectroscopy-intro">
-              Magnetic Resonance (MR) spectroscopy is a noninvasive diagnostic
-              test for measuring biochemical changes in the brain, especially
-              the presence of tumors. While magnetic resonance imaging (MRI)
-              identifies the anatomical location of a tumor, MR spectroscopy
-              compares the chemical composition of normal brain tissue with
-              abnormal tumor tissue. This test can also be used to detect tissue
-              changes in stroke and epilepsy.
+              Magnetic resonance spectroscopy (MRS) is a powerful tool that
+              examines brain metabolism using standard clinical MR scanners. A
+              non-invasive and quantitative technique, MRS is ideally suited for
+              repeated measurements and for measuring therapeutic outcomes.
+              Often described as a “virtual biopsy”, MRS obtains chemical
+              signals, or metabolites, from a region of interest (ROI or voxel).
             </div>
             <Link className="learn-more-button" to="/about-spectroscopy">
               Learn More
