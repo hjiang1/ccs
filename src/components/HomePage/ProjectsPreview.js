@@ -58,7 +58,7 @@ const Container = styled.div`
   }
 `
 
-const ProjectsPreview = (props) => {
+const ProjectsPreview = props => {
   return (
     <Container {...props}>
       <h2 className="projects-preview-title">Research Projects</h2>

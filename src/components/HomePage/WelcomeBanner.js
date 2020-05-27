@@ -24,7 +24,7 @@ const Container = styled.div`
   background-size: cover;
 
   .page-title {
-    color: #d1d7e3;
+    color: #e1e6f0;
     margin: 0;
     font-size: 4rem;
     text-align: center;
@@ -42,12 +42,12 @@ const Container = styled.div`
     margin-top: 6rem;
 
     border-radius: 5px;
-    border: 2px solid #d1d7e3;
+    border: 2px solid #e1e6f0;
     padding: 1rem 4rem;
     font-weight: bold;
     font-size: 1.5rem;
     color: rgba(44, 44, 70);
-    background-color: #d1d7e3;
+    background-color: #e1e6f0;
     text-decoration: none;
     cursor: pointer;
 
@@ -62,7 +62,7 @@ const Container = styled.div`
 
     :hover {
       background-color: rgba(255, 255, 255, 0.15);
-      color: #d1d7e3;
+      color: #e1e6f0;
     }
   }
 
@@ -75,7 +75,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-    border: 3px solid #d1d7e3;
+    border: 3px solid #e1e6f0;
     border-radius: 50%;
 
     transition: transform 0.2s ease;

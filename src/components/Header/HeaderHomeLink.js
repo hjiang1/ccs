@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
   .header-home-link {
-    color: #d1d7e3;
+    color: #e1e6f0;
     text-decoration: none;
     display: flex;
     align-items: center;
