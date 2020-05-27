@@ -15,7 +15,7 @@ const Container = styled.div`
     align-items: center;
 
     height: 6rem;
-    background: transparent;
+    background: linear-gradient(15deg, rgba(0, 0, 0), rgba(44, 44, 70));
     padding: 0 2rem;
 
     .header-nav-container {
@@ -85,6 +85,7 @@ const Header = () => {
         <HeaderHomeLink />
         <div className="header-nav-container">
           <HeaderNavLink to="/">Home</HeaderNavLink>
+          <HeaderNavLink to="/the-lab/">The Lab</HeaderNavLink>
           <HeaderNavLink to="/projects/">Projects</HeaderNavLink>
           <HeaderNavLink to="/about-spectroscopy/">
             About Spectroscopy
