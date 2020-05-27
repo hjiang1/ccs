@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-item">
-          <h6 className="footer-item-title">Site Navigation</h6>
+          <h6 className="footer-item-title">Navigation</h6>
           <div className="footer-item-line">
             <Link className="footer-link" to="/">
               Home

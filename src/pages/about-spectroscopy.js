@@ -6,14 +6,14 @@ import SEO from "../components/SEO"
 import spec from "../images/spec.png"
 
 const Container = styled.div`
-  @media screen and (max-width: 1000px) {
-    padding: 2rem 3rem;
-  }
-
   .page-section {
     display: flex;
     flex-direction: column;
     padding: 6rem 10rem;
+
+    @media screen and (max-width: 1000px) {
+      padding: 2rem 3rem;
+    }
 
     &.alternate {
       background-color: #e1e4ed;
