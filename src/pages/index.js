@@ -11,6 +11,7 @@ import mri from "../images/mri.png"
 import nfl from "../images/nfl.png"
 import explosion from "../images/explosion.png"
 import atp from "../images/atp.png"
+import spectrum from "../images/spectrum.png"
 
 const Container = styled.div`
   margin-top: -6rem;
@@ -85,6 +86,64 @@ const Container = styled.div`
       }
     }
   }
+
+  .spectroscopy-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    background-color: #edf0f5;
+
+    .spectroscopy-preview-title {
+      margin: 0 0 4rem;
+      color: #0d0b0e;
+      grid-area: title;
+    }
+
+    .spectroscopy-preview-content {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-template-rows: max-content 1fr;
+      grid-template-areas:
+        "image intro"
+        "image button";
+      grid-gap: 4rem;
+
+      .card-image {
+        grid-area: image;
+        max-width: 40vw;
+      }
+
+      .spectroscopy-intro {
+        grid-area: intro;
+
+        font-size: 1.5rem;
+        line-height: 3rem;
+        color: #646773;
+      }
+
+      .learn-more-button {
+        grid-area: button;
+        justify-self: center;
+
+        width: fit-content;
+        height: fit-content;
+        padding: 1rem 2rem;
+
+        color: #edf0f5;
+        border-radius: 5px;
+        background-color: rgba(76, 105, 134);
+
+        transition: background-color 0.1s ease, color 0.1s ease;
+
+        :hover {
+          color: #0d0b0e;
+          background-color: #a3a9b8;
+        }
+      }
+    }
+  }
 `
 
 const IndexPage = () => (
@@ -125,6 +184,20 @@ const IndexPage = () => (
           <button className="preview-page-button">
             <FaAngleRight />
           </button>
+        </div>
+      </div>
+      <div className="spectroscopy-preview">
+        <h2 className="spectroscopy-preview-title">About Spectroscopy</h2>
+        <div className="spectroscopy-preview-content">
+          <img className="card-image" src={spectrum} alt="spectrum" />
+          <div className="spectroscopy-intro">
+            Magnetic resonance spectroscopy (MRS) is an analytical tool that
+            detects radio frequency electromagnetic signals that are produced by
+            the atomic nuclei within molecules. It can be used to obtain in situ
+            concentration measures for certain chemicals in complex samples,
+            such as the living brain.
+          </div>
+          <button className="learn-more-button">Learn More</button>
         </div>
       </div>
     </Container>

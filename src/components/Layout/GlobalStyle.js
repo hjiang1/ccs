@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     cursor: pointer;
     padding: 0;
+    font-size: 1rem;
+    font-weight: bold;
 
     :focus {
       outline: none;
