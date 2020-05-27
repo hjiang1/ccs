@@ -192,7 +192,7 @@ const Members = () => (
       <div className="page-section">
         <img className="member-portrait" src={alex} alt="Alex Lin" />
         <div className="member-name">Eduardo Coello, PhD</div>
-        <div className="member-title">Postdoctorate Fellow</div>
+        <div className="member-title">Postdoctoral Fellow</div>
         <div className="member-intro">
           <p className="member-intro-p">
             Dr. Lin is the director of the Center for Clinical Spectroscopy at
@@ -215,7 +215,7 @@ const Members = () => (
       <div className="page-section alternate">
         <img className="member-portrait" src={alex} alt="Alex Lin" />
         <div className="member-name">Katherine Morigaki Breedlove, PhD</div>
-        <div className="member-title">Postdoctorate Fellow</div>
+        <div className="member-title">Postdoctoral Fellow</div>
         <div className="member-intro">
           <p className="member-intro-p">
             Dr. Lin is the director of the Center for Clinical Spectroscopy at
@@ -297,7 +297,7 @@ const Members = () => (
           <div className="subsection-item">Joshua Ladner, MD</div>
         </div>
         <div className="subsection phds">
-          <div className="subsection-title">Postdoctorate Fellows</div>
+          <div className="subsection-title">Postdoctoral Fellows</div>
           <div className="subsection-item">Ben Rowland, PhD</div>
           <div className="subsection-item">Ben Rowland, PhD</div>
           <div className="subsection-item">Ben Rowland, PhD</div>
