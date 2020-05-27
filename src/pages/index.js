@@ -100,6 +100,10 @@ const Container = styled.div`
     padding: 6rem 3rem;
     background-color: #e1e4ed;
 
+    @media screen and (max-width: 1200px) {
+      padding: 3rem;
+    }
+
     .projects-preview-title {
       margin: 0 0 4rem;
       color: #0d0b0e;
@@ -141,6 +145,10 @@ const Container = styled.div`
     padding: 6rem;
     background-color: white;
 
+    @media screen and (max-width: 1200px) {
+      padding: 3rem;
+    }
+
     .spectroscopy-preview-title {
       margin: 0 0 4rem;
       color: #0d0b0e;
@@ -157,16 +165,25 @@ const Container = styled.div`
       grid-gap: 4rem;
       grid-row-gap: 2rem;
 
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: auto;
+        grid-template-rows: auto max-content max-content;
+        grid-template-areas:
+          "image"
+          "intro"
+          "button";
+        justify-items: center;
+      }
+
       .card-image {
         grid-area: image;
-        max-width: 40vw;
       }
 
       .spectroscopy-intro {
         grid-area: intro;
 
         font-size: 1.5rem;
-        line-height: 3rem;
+        line-height: 2em;
         color: #646773;
       }
 
@@ -204,6 +221,10 @@ const Container = styled.div`
     padding: 6rem;
     background-color: #e1e4ed;
 
+    @media screen and (max-width: 1200px) {
+      padding: 3rem;
+    }
+
     .members-preview-title {
       margin: 0 0 4rem;
       color: #0d0b0e;
@@ -211,7 +232,6 @@ const Container = styled.div`
     }
 
     .members-image-container {
-      width: calc(100% - 4rem);
       position: relative;
 
       display: flex;
@@ -220,6 +240,8 @@ const Container = styled.div`
 
       .members-image {
         width: 100%;
+        max-height: 30rem;
+        object-fit: cover;
       }
 
       .members-button {
@@ -312,13 +334,12 @@ const IndexPage = () => {
           <div className="spectroscopy-preview-content">
             <img className="card-image" src={spectrum} alt="spectrum" />
             <div className="spectroscopy-intro">
-              Magnetic Resonance (MR) spectroscopy is a noninvasive diagnostic
-              test for measuring biochemical changes in the brain, especially
-              the presence of tumors. While magnetic resonance imaging (MRI)
-              identifies the anatomical location of a tumor, MR spectroscopy
-              compares the chemical composition of normal brain tissue with
-              abnormal tumor tissue. This test can also be used to detect tissue
-              changes in stroke and epilepsy.
+              Magnetic resonance spectroscopy (MRS) is a powerful tool that
+              examines brain metabolism using standard clinical MR scanners. A
+              non-invasive and quantitative technique, MRS is ideally suited for
+              repeated measurements and for measuring therapeutic outcomes.
+              Often described as a “virtual biopsy”, MRS obtains chemical
+              signals, or metabolites, from a region of interest (ROI or voxel).
             </div>
             <Link className="learn-more-button" to="/about-spectroscopy">
               Learn More

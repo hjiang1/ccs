@@ -20,7 +20,11 @@ const Container = styled.footer`
     .footer-item {
       .footer-item-title {
         margin-top: 0;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .footer-item-line {
+        margin-top: 0.3rem;
       }
 
       .footer-link {
@@ -43,18 +47,20 @@ const Footer = () => {
           <h6 className="footer-item-title">
             Center for Clinical Spectroscopy
           </h6>
-          <div className="footer-item-line">221 Longwood Ave</div>
-          <div className="footer-item-line">Boston, MA 02115</div>
-          <div className="footer-item-line">Phone: (123) 456-7890</div>
-          <div className="footer-item-line">
+          <div className="footer-item-line address1">221 Longwood Ave</div>
+          <div className="footer-item-line address2">
+            BLI-236 Boston, MA 02115
+          </div>
+          <div className="footer-item-line phone">Phone: (617) 525-5086</div>
+          <div className="footer-item-line email">
             Email:{" "}
             <a
               className="footer-link"
-              href="mailto: abc@example.com"
+              href="mailto: spectro@partners.org"
               target="_blank"
               rel="noopener noreferrer"
             >
-              asd@asd.asd
+              spectro@partners.org
             </a>
           </div>
         </div>
@@ -82,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-item">
-          <h6 className="footer-item-title">Site Navigation</h6>
+          <h6 className="footer-item-title">Navigation</h6>
           <div className="footer-item-line">
             <Link className="footer-link" to="/">
               Home

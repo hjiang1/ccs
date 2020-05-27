@@ -5,18 +5,15 @@ import styled from "styled-components"
 
 const Container = styled.div`
   display: flex;
-  margin: -1px 0;
+  margin-bottom: -1px;
   background-color: white;
   border-top: 1px solid gray;
   border-bottom: 1px solid #edf0f5;
-  background: linear-gradient(
-    to right,
-    black,
-    black 30%,
-    rgba(44, 44, 70, 0.8)
-  );
+  background: linear-gradient(to right, rgba(20, 20, 30), rgba(44, 44, 70));
 
   .dropdown-link {
+    display: flex;
+    align-items: center;
     color: #edf0f5;
     padding: 2rem;
     text-decoration: none;
@@ -25,12 +22,7 @@ const Container = styled.div`
   }
 
   :hover {
-    background: linear-gradient(
-      to right,
-      rgba(44, 44, 70),
-      rgba(44, 44, 70) 30%,
-      rgba(44, 44, 70, 0.8)
-    );
+    background: rgba(44, 44, 70);
   }
 `
 

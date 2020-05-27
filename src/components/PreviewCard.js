@@ -15,7 +15,6 @@ const Container = styled.div`
     height: 15rem;
     width: 100%;
     object-fit: cover;
-    overflow: hidden;
   }
 
   .study-title {
