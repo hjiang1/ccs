@@ -4,6 +4,7 @@ import styled from "styled-components"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: white;
   border: 1px solid #d2d2d2;
   overflow: hidden;
@@ -22,22 +23,34 @@ const Container = styled.div`
   }
 
   .study-title {
-    margin: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 1rem 0;
+
+    color: var(--title-color);
 
     @media screen and (max-width: 500px) {
       font-size: 1rem;
-      margin: 1rem;
     }
   }
 
   .study-detail {
-    margin: 0 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+
+    color: var(--title-color);
     font-size: 1.25rem;
-    height: 5rem;
+    text-align: center;
 
     @media screen and (max-width: 500px) {
       font-size: 1rem;
-      margin: 0 1rem 1rem;
     }
   }
 
