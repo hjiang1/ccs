@@ -1,13 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
+import { Link } from "gatsby"
 
-import PreviewCard from "../PreviewCard"
-
-import mri from "../../images/mri.png"
-import nfl from "../../images/nfl.png"
-import explosion from "../../images/explosion.png"
-import atp from "../../images/atp.png"
+import Carousel from "../Carousel"
 
 const Container = styled.div`
   display: flex;
@@ -30,30 +25,38 @@ const Container = styled.div`
     }
   }
 
-  .preview-container {
+  .preview-content {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
 
-    .preview-page-button {
-      height: 2rem;
-      width: 2rem;
-      transition: transform 0.2s ease;
-
-      svg {
-        height: 2rem;
-        width: 2rem;
-      }
-
-      :hover {
-        transform: scale(1.25);
-      }
+    .carousel-wrapper {
+      width: 100%;
     }
 
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
-      margin: 0 1rem;
+    .see-all-button {
+      margin-top: 3rem;
+      grid-area: button;
+      justify-self: center;
+
+      width: fit-content;
+      height: fit-content;
+      padding: 1rem 2rem;
+
+      color: var(--color-light);
+      background-color: rgba(44, 44, 70);
+      border: 2px solid rgba(44, 44, 70);
+
+      font-weight: bold;
+      text-decoration: none;
+
+      transition: background-color 0.1s ease, color 0.1s ease;
+
+      :hover {
+        color: rgba(44, 44, 70);
+        background-color: transparent;
+      }
     }
   }
 `
@@ -62,35 +65,13 @@ const ProjectsPreview = props => {
   return (
     <Container {...props}>
       <h2 className="projects-preview-title">Research Projects</h2>
-      <div className="preview-container">
-        <button className="preview-page-button">
-          <FaAngleLeft />
-        </button>
-        <div className="card-container">
-          <PreviewCard
-            title="Traumatic Brain Injury"
-            detail="Sports-Related Concussion in Children"
-            image={mri}
-          />
-          <PreviewCard
-            title="Traumatic Brain Injury"
-            detail="Repetetive Head Injury in NFL Players"
-            image={nfl}
-          />
-          <PreviewCard
-            title="Traumatic Brain Injury"
-            detail="Mild Traumatic Brain Injury and Post-Traumatic Stress Disorder in Soldiers"
-            image={explosion}
-          />
-          <PreviewCard
-            title="Physiology of the Body"
-            detail="Muscle Energetics"
-            image={atp}
-          />
+      <div className="preview-content">
+        <div className="carousel-wrapper">
+          <Carousel />
         </div>
-        <button className="preview-page-button">
-          <FaAngleRight />
-        </button>
+        <Link className="see-all-button" to="/projects/">
+          View All Projects
+        </Link>
       </div>
     </Container>
   )
