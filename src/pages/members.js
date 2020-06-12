@@ -5,6 +5,8 @@ import Layout from "../components/Layout"
 import Page from "../components/Page"
 import SEO from "../components/SEO"
 import alex from "../images/alex.png"
+import vicky from "../images/vicky.png"
+import katie from "../images/katie.png"
 
 const Container = styled.div`
   display: flex;
@@ -181,27 +183,42 @@ const Members = () => (
           </div>
         </div>
         <div className="page-section alternate">
-          <img className="member-portrait" src={alex} alt="Alex Lin" />
-          <div className="member-name">Huijun "Vicky" Liao, BS</div>
+          <img
+            className="member-portrait"
+            src={vicky}
+            alt="Huijun ‘Vicky’ Liao, BS, MR-RT
+"
+          />
+          <div className="member-name">Huijun ‘Vicky’ Liao, BS, MR-RT</div>
           <div className="member-title">Research Coordinator</div>
           <div className="member-intro">
             <p className="member-intro-p">
-              Huijun "Vicky" Liao joined the Center for Clinical Spectroscopy in
+              Huijun ‘Vicky’ Liao joined the Center for Clinical Spectroscopy in
               May 2012 as a clinical research study coordinator. She graduated
-              from Boston University with a degree in Human Physiology. She has
-              more than two years’ experience in clinical spectroscopy and
-              continues receiving professional training using MR spectroscopy in
-              the clinic and for research. She helps coordinate the study of
-              mild traumatic brain injury both in sports related concussion and
-              military blast injury. She also assists with studies in brain
-              cancer, multiple sclerosis, and schizophrenia. In addition to
-              neurospectroscopy, she is involved in MRS studies of the liver and
-              leg muscle, including multinuclear 31P spectroscopy
+              from Boston University with a degree in Human Physiology in 2011
+              and successfully passed the certification exam for MR
+              technologists through the American Registry of Magnetic Resonance
+              Imaging Technologists (ARMRIT) in 2015.  She helps coordinate and
+              collect MR data (with 8 years of MR scanning experiences) for
+              different brain research studies at Center for Clinical
+              Spectroscopy including the study of mild traumatic brain injury
+              both in sports related concussion and military blast injury, brain
+              cancer, multiple sclerosis, PTSD, bipolar and schizophrenia. In
+              addition to neurospectroscopy, she is involved in MRS studies of
+              the liver and leg muscle, including multinuclear 31P spectroscopy.
+              She has also served as a SMRT (The Society for MR Radiographers &
+              Technologists) representative of MR Spectroscopy Study Group in
+              ISMRM (International Society for Magnetic Resonance in Medicine)
+              from 2019 to 2021.
             </p>
           </div>
         </div>
         <div className="page-section">
-          <img className="member-portrait" src={alex} alt="Alex Lin" />
+          <img
+            className="member-portrait"
+            src={alex}
+            alt="Eduardo Coello, PhD"
+          />
           <div className="member-name">Eduardo Coello, PhD</div>
           <div className="member-title">Postdoctoral Fellow</div>
           <div className="member-intro">
@@ -225,7 +242,11 @@ const Members = () => (
           </div>
         </div>
         <div className="page-section alternate">
-          <img className="member-portrait" src={alex} alt="Alex Lin" />
+          <img
+            className="member-portrait"
+            src={katie}
+            alt="Katherine Morigaki Breedlove, PhD"
+          />
           <div className="member-name">Katherine Morigaki Breedlove, PhD</div>
           <div className="member-title">Postdoctoral Fellow</div>
           <div className="member-intro">
