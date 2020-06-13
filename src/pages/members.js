@@ -6,6 +6,7 @@ import Page from "../components/Page"
 import SEO from "../components/SEO"
 import alex from "../images/alex.png"
 import vicky from "../images/vicky.png"
+import eduardo from "../images/eduardo.png"
 import katie from "../images/katie.png"
 
 const Container = styled.div`
@@ -216,28 +217,30 @@ const Members = () => (
         <div className="page-section">
           <img
             className="member-portrait"
-            src={alex}
+            src={eduardo}
             alt="Eduardo Coello, PhD"
           />
           <div className="member-name">Eduardo Coello, PhD</div>
           <div className="member-title">Postdoctoral Fellow</div>
           <div className="member-intro">
             <p className="member-intro-p">
-              Dr. Lin is the director of the Center for Clinical Spectroscopy at
-              Brigham and Women’s Hospital and Assistant Professor of Radiology
-              at Harvard Medical School. Dr. Lin is a graduate of the California
-              Institute of Technology, where he completed his Masters degree in
-              Bioengineering and his doctoral degree in Biochemistry and
-              Molecular Biophysics. He began his training as a research
-              associate in 1997 and was appointed Director of Clinical Services
-              and Senior Scientist at the Magnetic Resonance Spectroscopy Unit
-              at the Huntington Medical Research Institutes in 2003. Since that
-              time, he has been a visiting research associate at the Center of
-              MR Research at the University of Illinois Chicago. From 2007 to
-              2009, Dr. Lin had a research fellowship at the National Heart,
-              Lung and Blood Institute at the National Institutes of Health in
-              Bethesda, MD. Dr. Lin arrived at Brigham and Women’s Hospital in
-              2009.
+              Eduardo Coello is a postdoctoral fellow at the Center of Clinical
+              Spectroscopy since 2018. His expertise is primarily in acquisition
+              and reconstruction methods for medical imaging technologies, such
+              as magnetic resonance spectroscopy (MRS), spectroscopic imaging
+              (MRSI), X-ray imaging, and ultrasound. He obtained a degree in
+              Biomedical Engineering (B.Sc.), and in Biomedical Computing
+              (M.Sc.) before completing his doctoral training in the field of
+              Medical Physics at the Technical University of Munich (TUM). From
+              2013 to 2018 he worked at the GE Global Research Center in Munich,
+              Germany, in the development of new techniques for X-ray
+              phase-contrast imaging and accelerated MRSI. In 2017, he was a
+              visiting researcher in the Department of Radiology and Biomedical
+              Imaging at the University of California, San Francisco (UCSF)
+              where he worked on the optimization high-resolution MRSI
+              acquisition sequences at 7T. His current research focuses on the
+              development of new MRS and MRSI methodologies for clinical
+              applications at 3T and 7T.
             </p>
           </div>
         </div>
