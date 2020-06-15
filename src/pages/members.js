@@ -8,6 +8,7 @@ import alex from "../images/alex.png"
 import vicky from "../images/vicky.png"
 import eduardo from "../images/eduardo.png"
 import katie from "../images/katie.png"
+import victoria from "../images/victoria.png"
 
 const Container = styled.div`
   display: flex;
@@ -16,6 +17,10 @@ const Container = styled.div`
   .section-title {
     align-self: center;
     margin-top: 6rem;
+  }
+
+  .alternate {
+    background-color: var(--background-color-alternate);
   }
 
   .page-section {
@@ -37,10 +42,6 @@ const Container = styled.div`
         "portrait name"
         "portrait title"
         "intro intro";
-    }
-
-    &.alternate {
-      background-color: var(--background-color-alternate);
     }
 
     .member-portrait {
@@ -86,7 +87,7 @@ const Container = styled.div`
     grid-template-areas:
       "title title title"
       "meds phds students";
-    margin-bottom: 6rem;
+    padding-bottom: 6rem;
 
     .section-title {
       grid-area: title;
@@ -297,6 +298,34 @@ const Members = () => (
           </div>
         </div>
         <div className="page-section alternate">
+          <img
+            className="member-portrait"
+            src={victoria}
+            alt="Victoria E. Sanchez, BS"
+          />
+          <div className="member-name">Victoria E. Sanchez, BS</div>
+          <div className="member-title">Visiting Research Intern</div>
+          <div className="member-intro">
+            <p className="member-intro-p">
+              Victoria Sanchez is a medical student at Indiana University School
+              of Medicine who joined the Center for Clinical Spectroscopy in the
+              summer of 2020 as a Visiting Research Intern with the Harvard
+              Catalyst VRIP. She graduated from Florida International University
+              with a degree in Biological Sciences in 2017. Her interests in
+              cancer biology began during her freshman year of college where her
+              primary focus was to test how alternations in gene expression
+              mediate hallmarks of castration-resistant prostate cancer.
+              Developing such a strong fondess for research led her to seek a
+              research trainee position at the National Institutes of Health
+              within the Surgical Neurology Branch. This is where Victoria's
+              enthusiasm for neuro-oncology evolved. Now, she is beginning to
+              help with a study for the Cancer for Clinical Spectroscopy that
+              uses MRS to measure metabolites within IDH mutant low-grade
+              gliomas.
+            </p>
+          </div>
+        </div>
+        <div className="page-section ">
           <img className="member-portrait" src={alex} alt="Alex Lin" />
           <div className="member-name">Sam Jiang, BS</div>
           <div className="member-title">Research Assistant I</div>
@@ -320,7 +349,7 @@ const Members = () => (
             </p>
           </div>
         </div>
-        <div className="past-members-section">
+        <div className="past-members-section alternate">
           <h2 className="section-title">Past Members</h2>
           <div className="subsection meds">
             <div className="subsection-title">Medical Students</div>
