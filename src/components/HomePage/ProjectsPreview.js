@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Fade from "react-reveal/Fade"
 
 import Carousel from "../Carousel"
 
@@ -64,15 +65,17 @@ const Container = styled.div`
 const ProjectsPreview = props => {
   return (
     <Container {...props}>
-      <h2 className="projects-preview-title">Research Projects</h2>
-      <div className="preview-content">
-        <div className="carousel-wrapper">
-          <Carousel />
+      <Fade>
+        <h2 className="projects-preview-title">Research Projects</h2>
+        <div className="preview-content">
+          <div className="carousel-wrapper">
+            <Carousel />
+          </div>
+          <Link className="see-all-button" to="/projects/">
+            View All Projects
+          </Link>
         </div>
-        <Link className="see-all-button" to="/projects/">
-          View All Projects
-        </Link>
-      </div>
+      </Fade>
     </Container>
   )
 }

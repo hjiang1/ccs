@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Fade from "react-reveal/Fade"
 
 import building from "../../images/221.png"
 
@@ -83,13 +84,15 @@ const Container = styled.div`
 const MembersPreview = () => {
   return (
     <Container>
-      <h2 className="members-preview-title">Members</h2>
-      <div className="members-image-container">
-        <img className="members-image" src={building} alt="building" />
-        <Link className="members-button" to="/members/">
-          Meet Our Members
-        </Link>
-      </div>
+      <Fade>
+        <h2 className="members-preview-title">Members</h2>
+        <div className="members-image-container">
+          <img className="members-image" src={building} alt="building" />
+          <Link className="members-button" to="/members/">
+            Meet Our Members
+          </Link>
+        </div>
+      </Fade>
     </Container>
   )
 }
