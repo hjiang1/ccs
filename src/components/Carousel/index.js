@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react"
+import React, { useRef } from "react"
 import styled from "styled-components"
 import Slider from "react-slick"
 
@@ -76,40 +76,44 @@ const PrevArrow = props => {
 }
 
 const Carousel = () => {
-  const [numSlides, setNumSlides] = useState(1)
-  const [showDots, setShowDots] = useState(false)
-
   const sliderRef = useRef(null)
   const settings = {
-    dots: showDots,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: numSlides,
+    slidesToShow: 4,
     slidesToScroll: 1,
     swipeToSlide: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
+    responsive: [
+      {
+        breakpoint: 1800,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+        },
+      },
+    ],
   }
-
-  const setSizing = () => {
-    if (showDots && window.innerWidth <= 500) {
-      setShowDots(false)
-    } else if (!showDots && window.innerWidth > 500) {
-      setShowDots(true)
-    }
-
-    setNumSlides(Math.round(window.innerWidth / 500))
-  }
-
-  useEffect(() => {
-    setSizing()
-
-    const onResize = window.addEventListener("resize", setSizing)
-
-    return () => {
-      window.removeEventListener("resize", onResize)
-    }
-  })
 
   return (
     <Container>

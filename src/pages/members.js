@@ -5,6 +5,10 @@ import Layout from "../components/Layout"
 import Page from "../components/Page"
 import SEO from "../components/SEO"
 import alex from "../images/alex.png"
+import vicky from "../images/vicky.png"
+import eduardo from "../images/eduardo.png"
+import katie from "../images/katie.png"
+import victoria from "../images/victoria.png"
 
 const Container = styled.div`
   display: flex;
@@ -13,6 +17,10 @@ const Container = styled.div`
   .section-title {
     align-self: center;
     margin-top: 6rem;
+  }
+
+  .alternate {
+    background-color: var(--background-color-alternate);
   }
 
   .page-section {
@@ -34,10 +42,6 @@ const Container = styled.div`
         "portrait name"
         "portrait title"
         "intro intro";
-    }
-
-    &.alternate {
-      background-color: var(--background-color-alternate);
     }
 
     .member-portrait {
@@ -83,7 +87,7 @@ const Container = styled.div`
     grid-template-areas:
       "title title title"
       "meds phds students";
-    margin-bottom: 6rem;
+    padding-bottom: 6rem;
 
     .section-title {
       grid-area: title;
@@ -181,51 +185,72 @@ const Members = () => (
           </div>
         </div>
         <div className="page-section alternate">
-          <img className="member-portrait" src={alex} alt="Alex Lin" />
-          <div className="member-name">Huijun "Vicky" Liao, BS</div>
+          <img
+            className="member-portrait"
+            src={vicky}
+            alt="Huijun ‘Vicky’ Liao, BS, MR-RT
+"
+          />
+          <div className="member-name">Huijun ‘Vicky’ Liao, BS, MR-RT</div>
           <div className="member-title">Research Coordinator</div>
           <div className="member-intro">
             <p className="member-intro-p">
-              Huijun "Vicky" Liao joined the Center for Clinical Spectroscopy in
+              Huijun ‘Vicky’ Liao joined the Center for Clinical Spectroscopy in
               May 2012 as a clinical research study coordinator. She graduated
-              from Boston University with a degree in Human Physiology. She has
-              more than two years’ experience in clinical spectroscopy and
-              continues receiving professional training using MR spectroscopy in
-              the clinic and for research. She helps coordinate the study of
-              mild traumatic brain injury both in sports related concussion and
-              military blast injury. She also assists with studies in brain
-              cancer, multiple sclerosis, and schizophrenia. In addition to
-              neurospectroscopy, she is involved in MRS studies of the liver and
-              leg muscle, including multinuclear 31P spectroscopy
+              from Boston University with a degree in Human Physiology in 2011
+              and successfully passed the certification exam for MR
+              technologists through the American Registry of Magnetic Resonance
+              Imaging Technologists (ARMRIT) in 2015.  She helps coordinate and
+              collect MR data (with 8 years of MR scanning experiences) for
+              different brain research studies at Center for Clinical
+              Spectroscopy including the study of mild traumatic brain injury
+              both in sports related concussion and military blast injury, brain
+              cancer, multiple sclerosis, PTSD, bipolar and schizophrenia. In
+              addition to neurospectroscopy, she is involved in MRS studies of
+              the liver and leg muscle, including multinuclear 31P spectroscopy.
+              She has also served as a SMRT (The Society for MR Radiographers &
+              Technologists) representative of MR Spectroscopy Study Group in
+              ISMRM (International Society for Magnetic Resonance in Medicine)
+              from 2019 to 2021.
             </p>
           </div>
         </div>
         <div className="page-section">
-          <img className="member-portrait" src={alex} alt="Alex Lin" />
+          <img
+            className="member-portrait"
+            src={eduardo}
+            alt="Eduardo Coello, PhD"
+          />
           <div className="member-name">Eduardo Coello, PhD</div>
           <div className="member-title">Postdoctoral Fellow</div>
           <div className="member-intro">
             <p className="member-intro-p">
-              Dr. Lin is the director of the Center for Clinical Spectroscopy at
-              Brigham and Women’s Hospital and Assistant Professor of Radiology
-              at Harvard Medical School. Dr. Lin is a graduate of the California
-              Institute of Technology, where he completed his Masters degree in
-              Bioengineering and his doctoral degree in Biochemistry and
-              Molecular Biophysics. He began his training as a research
-              associate in 1997 and was appointed Director of Clinical Services
-              and Senior Scientist at the Magnetic Resonance Spectroscopy Unit
-              at the Huntington Medical Research Institutes in 2003. Since that
-              time, he has been a visiting research associate at the Center of
-              MR Research at the University of Illinois Chicago. From 2007 to
-              2009, Dr. Lin had a research fellowship at the National Heart,
-              Lung and Blood Institute at the National Institutes of Health in
-              Bethesda, MD. Dr. Lin arrived at Brigham and Women’s Hospital in
-              2009.
+              Eduardo Coello is a postdoctoral fellow at the Center of Clinical
+              Spectroscopy since 2018. His expertise is primarily in acquisition
+              and reconstruction methods for medical imaging technologies, such
+              as magnetic resonance spectroscopy (MRS), spectroscopic imaging
+              (MRSI), X-ray imaging, and ultrasound. He obtained a degree in
+              Biomedical Engineering (B.Sc.), and in Biomedical Computing
+              (M.Sc.) before completing his doctoral training in the field of
+              Medical Physics at the Technical University of Munich (TUM). From
+              2013 to 2018 he worked at the GE Global Research Center in Munich,
+              Germany, in the development of new techniques for X-ray
+              phase-contrast imaging and accelerated MRSI. In 2017, he was a
+              visiting researcher in the Department of Radiology and Biomedical
+              Imaging at the University of California, San Francisco (UCSF)
+              where he worked on the optimization high-resolution MRSI
+              acquisition sequences at 7T. His current research focuses on the
+              development of new MRS and MRSI methodologies for clinical
+              applications at 3T and 7T.
             </p>
           </div>
         </div>
         <div className="page-section alternate">
-          <img className="member-portrait" src={alex} alt="Alex Lin" />
+          <img
+            className="member-portrait"
+            src={katie}
+            alt="Katherine Morigaki Breedlove, PhD"
+          />
           <div className="member-name">Katherine Morigaki Breedlove, PhD</div>
           <div className="member-title">Postdoctoral Fellow</div>
           <div className="member-intro">
@@ -273,6 +298,34 @@ const Members = () => (
           </div>
         </div>
         <div className="page-section alternate">
+          <img
+            className="member-portrait"
+            src={victoria}
+            alt="Victoria E. Sanchez, BS"
+          />
+          <div className="member-name">Victoria E. Sanchez, BS</div>
+          <div className="member-title">Visiting Research Intern</div>
+          <div className="member-intro">
+            <p className="member-intro-p">
+              Victoria Sanchez is a medical student at Indiana University School
+              of Medicine who joined the Center for Clinical Spectroscopy in the
+              summer of 2020 as a Visiting Research Intern with the Harvard
+              Catalyst VRIP. She graduated from Florida International University
+              with a degree in Biological Sciences in 2017. Her interests in
+              cancer biology began during her freshman year of college where her
+              primary focus was to test how alternations in gene expression
+              mediate hallmarks of castration-resistant prostate cancer.
+              Developing such a strong fondess for research led her to seek a
+              research trainee position at the National Institutes of Health
+              within the Surgical Neurology Branch. This is where Victoria's
+              enthusiasm for neuro-oncology evolved. Now, she is beginning to
+              help with a study for the Cancer for Clinical Spectroscopy that
+              uses MRS to measure metabolites within IDH mutant low-grade
+              gliomas.
+            </p>
+          </div>
+        </div>
+        <div className="page-section ">
           <img className="member-portrait" src={alex} alt="Alex Lin" />
           <div className="member-name">Sam Jiang, BS</div>
           <div className="member-title">Research Assistant I</div>
@@ -296,7 +349,7 @@ const Members = () => (
             </p>
           </div>
         </div>
-        <div className="past-members-section">
+        <div className="past-members-section alternate">
           <h2 className="section-title">Past Members</h2>
           <div className="subsection meds">
             <div className="subsection-title">Medical Students</div>

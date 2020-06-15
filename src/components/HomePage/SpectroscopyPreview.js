@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Fade from "react-reveal/Fade"
 
 import spectrum from "../../images/spectrum.png"
 
@@ -92,21 +93,23 @@ const Container = styled.div`
 const SpectroscopyPreview = () => {
   return (
     <Container>
-      <h2 className="spectroscopy-preview-title">About Spectroscopy</h2>
-      <div className="spectroscopy-preview-content">
-        <img className="card-image" src={spectrum} alt="spectrum" />
-        <div className="spectroscopy-intro">
-          Magnetic resonance spectroscopy (MRS) is a powerful tool that examines
-          brain metabolism using standard clinical MR scanners. A non-invasive
-          and quantitative technique, MRS is ideally suited for repeated
-          measurements and for measuring therapeutic outcomes. Often described
-          as a “virtual biopsy”, MRS obtains chemical signals, or metabolites,
-          from a region of interest (ROI or voxel).
+      <Fade>
+        <h2 className="spectroscopy-preview-title">About Spectroscopy</h2>
+        <div className="spectroscopy-preview-content">
+          <img className="card-image" src={spectrum} alt="spectrum" />
+          <div className="spectroscopy-intro">
+            Magnetic resonance spectroscopy (MRS) is a powerful tool that
+            examines brain metabolism using standard clinical MR scanners. A
+            non-invasive and quantitative technique, MRS is ideally suited for
+            repeated measurements and for measuring therapeutic outcomes. Often
+            described as a “virtual biopsy”, MRS obtains chemical signals, or
+            metabolites, from a region of interest (ROI or voxel).
+          </div>
+          <Link className="learn-more-button" to="/about-spectroscopy">
+            Learn More
+          </Link>
         </div>
-        <Link className="learn-more-button" to="/about-spectroscopy">
-          Learn More
-        </Link>
-      </div>
+      </Fade>
     </Container>
   )
 }
