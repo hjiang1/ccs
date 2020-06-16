@@ -1,8 +1,15 @@
 import { createGlobalStyle } from "styled-components"
 
+import Avenir from "../../fonts/Avenir-Medium.otf"
+
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: "Avenir";
+    src: url(${Avenir});
+  }
+
   html {
-    font-family: Roboto, sans-serif;
+    font-family: Avenir;
 
     --spacing-modifier: 3;
 
