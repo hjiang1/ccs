@@ -32,53 +32,30 @@ const Container = styled.div`
     }
   }
 
-  .members-image-container {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     .members-image {
       width: 100%;
       max-height: 30rem;
       object-fit: cover;
+      margin-bottom: 4rem;
     }
 
     .members-button {
-      position: absolute;
+      padding: 1rem 2rem;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-
-      background: linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.75),
-        rgba(44, 44, 70, 0.75)
-      );
       color: var(--color-light);
-      font-size: 2rem;
+      background-color: rgba(44, 44, 70);
+      border: 2px solid rgba(44, 44, 70);
+
       font-weight: bold;
-
-      @media screen and (max-width: 500px) {
-        font-size: 1.5rem;
-      }
-
-      text-align: center;
       text-decoration: none;
-      cursor: pointer;
 
-      opacity: 0;
-      transition: opacity 0.2s ease;
+      transition: background-color 0.1s ease, color 0.1s ease;
 
       :hover {
-        opacity: 1;
+        color: rgba(44, 44, 70);
+        background-color: transparent;
       }
     }
-  }
 `
 
 const MembersPreview = () => {
@@ -86,12 +63,10 @@ const MembersPreview = () => {
     <Container>
       <Fade>
         <h2 className="members-preview-title">Members</h2>
-        <div className="members-image-container">
-          <img className="members-image" src={building} alt="building" />
-          <Link className="members-button" to="/members/">
-            Meet Our Members
-          </Link>
-        </div>
+        <img className="members-image" src={building} alt="building" />
+        <Link className="members-button" to="/members/">
+          Meet Our Members
+        </Link>
       </Fade>
     </Container>
   )
