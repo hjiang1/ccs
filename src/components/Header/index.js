@@ -18,10 +18,6 @@ const Container = styled.div`
     background: rgba(44, 44, 70);
     padding: 0 2rem;
 
-    @media screen and (max-width: 500px) {
-      padding: 0 1rem;
-    }
-
     .header-nav-container {
       display: flex;
       align-items: center;
