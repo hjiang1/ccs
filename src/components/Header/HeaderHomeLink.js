@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 import ccsLight from "../../images/ccsbwh-light.png"
+import ccsLogo from "../../images/ccs-logo.png"
 
 const Container = styled.div`
   display: flex;
@@ -22,6 +23,19 @@ const Container = styled.div`
     .logo {
       height: calc(100% - 2rem);
       padding: 1rem 0;
+
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
+    }
+
+    .logo-icon {
+      height: calc(100% - 4rem);
+      padding: 2rem 0;
+
+      @media screen and (min-width: 451px) {
+        display: none;
+      }
     }
   }
 `
@@ -43,6 +57,11 @@ const HeaderHomeLink = () => {
         <img
           className="logo"
           src={ccsLight}
+          alt="Center for Clinical Spectroscopy Logo"
+        />
+        <img
+          className="logo-icon"
+          src={ccsLogo}
           alt="Center for Clinical Spectroscopy Logo"
         />
       </Link>
