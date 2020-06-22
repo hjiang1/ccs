@@ -36,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
     --text-color: #646773;
     --color-light: #e1e6f0;
 
+    --header-height: 8rem;
   }
 
   body {

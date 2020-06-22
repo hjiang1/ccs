@@ -14,9 +14,13 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    height: 6rem;
+    height: var(--header-height);
     background: rgba(44, 44, 70);
     padding: 0 2rem;
+
+    @media screen and (max-width: 500px) {
+      padding: 0 1rem;
+    }
 
     .header-nav-container {
       display: flex;

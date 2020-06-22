@@ -188,8 +188,7 @@ const Members = () => (
           <img
             className="member-portrait"
             src={vicky}
-            alt="Huijun ‘Vicky’ Liao, BS, MR-RT
-"
+            alt="Huijun ‘Vicky’ Liao, BS, MR-RT"
           />
           <div className="member-name">Huijun ‘Vicky’ Liao, BS, MR-RT</div>
           <div className="member-title">Research Coordinator</div>

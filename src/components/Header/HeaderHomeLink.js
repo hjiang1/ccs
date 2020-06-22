@@ -3,12 +3,14 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
+import ccsLight from "../../images/ccsbwh-light.png"
+
 const Container = styled.div`
+  display: flex;
+  height: 100%;
+
   .header-home-link {
-    color: var(--color-light);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    height: 100%;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -18,19 +20,8 @@ const Container = styled.div`
     user-select: none;
 
     .logo {
-      font-weight: bold;
-      font-size: 3rem;
-    }
-
-    .logo-name {
-      font-weight: bold;
-      font-size: 1.15rem;
-      width: 10rem;
-      margin-left: 1rem;
-
-      @media screen and (max-width: 450px) {
-        display: none;
-      }
+      height: calc(100% - 2rem);
+      padding: 1rem 0;
     }
   }
 `
@@ -49,8 +40,11 @@ const HeaderHomeLink = () => {
   return (
     <Container className="header-home-link-container">
       <Link className="header-home-link" to="/">
-        <div className="logo">CCS</div>
-        <div className="logo-name">{data.site.siteMetadata.title}</div>
+        <img
+          className="logo"
+          src={ccsLight}
+          alt="Center for Clinical Spectroscopy Logo"
+        />
       </Link>
     </Container>
   )
