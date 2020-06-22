@@ -9,7 +9,7 @@ import SpectroscopyPreview from "../components/HomePage/SpectroscopyPreview"
 import MembersPreview from "../components/HomePage/MembersPreview"
 
 const Container = styled.div`
-  margin-top: -6rem;
+  margin-top: calc(-1 * var(--header-height));
 `
 
 const IndexPage = () => {

@@ -1,8 +1,25 @@
 import { createGlobalStyle } from "styled-components"
 
+import Avenir from "../../fonts/Avenir-Light.otf"
+import AvenirHeavy from "../../fonts/Avenir-Heavy.ttf"
+
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: "Avenir";
+    src: url(${Avenir});
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avenir";
+    src: url(${AvenirHeavy});
+    font-weight: bold;
+    font-style: normal;
+  }
+
   html {
-    font-family: Roboto, sans-serif;
+    font-family: Avenir, Roboto, sans-serif;
 
     --spacing-modifier: 3;
 
@@ -19,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
     --text-color: #646773;
     --color-light: #e1e6f0;
 
+    --header-height: 8rem;
   }
 
   body {

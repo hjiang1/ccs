@@ -9,6 +9,8 @@ import vicky from "../images/vicky.png"
 import eduardo from "../images/eduardo.png"
 import katie from "../images/katie.png"
 import victoria from "../images/victoria.png"
+import marcia from "../images/marcia.png"
+import sam from "../images/sam.png"
 
 const Container = styled.div`
   display: flex;
@@ -188,8 +190,7 @@ const Members = () => (
           <img
             className="member-portrait"
             src={vicky}
-            alt="Huijun ‘Vicky’ Liao, BS, MR-RT
-"
+            alt="Huijun ‘Vicky’ Liao, BS, MR-RT"
           />
           <div className="member-name">Huijun ‘Vicky’ Liao, BS, MR-RT</div>
           <div className="member-title">Research Coordinator</div>
@@ -200,7 +201,7 @@ const Members = () => (
               from Boston University with a degree in Human Physiology in 2011
               and successfully passed the certification exam for MR
               technologists through the American Registry of Magnetic Resonance
-              Imaging Technologists (ARMRIT) in 2015.  She helps coordinate and
+              Imaging Technologists (ARMRIT) in 2015. She helps coordinate and
               collect MR data (with 8 years of MR scanning experiences) for
               different brain research studies at Center for Clinical
               Spectroscopy including the study of mild traumatic brain injury
@@ -225,23 +226,23 @@ const Members = () => (
           <div className="member-title">Postdoctoral Fellow</div>
           <div className="member-intro">
             <p className="member-intro-p">
-              Eduardo Coello is a postdoctoral fellow at the Center of Clinical
-              Spectroscopy since 2018. His expertise is primarily in acquisition
-              and reconstruction methods for medical imaging technologies, such
-              as magnetic resonance spectroscopy (MRS), spectroscopic imaging
-              (MRSI), X-ray imaging, and ultrasound. He obtained a degree in
-              Biomedical Engineering (B.Sc.), and in Biomedical Computing
-              (M.Sc.) before completing his doctoral training in the field of
-              Medical Physics at the Technical University of Munich (TUM). From
-              2013 to 2018 he worked at the GE Global Research Center in Munich,
-              Germany, in the development of new techniques for X-ray
-              phase-contrast imaging and accelerated MRSI. In 2017, he was a
-              visiting researcher in the Department of Radiology and Biomedical
-              Imaging at the University of California, San Francisco (UCSF)
-              where he worked on the optimization high-resolution MRSI
-              acquisition sequences at 7T. His current research focuses on the
-              development of new MRS and MRSI methodologies for clinical
-              applications at 3T and 7T.
+              Eduardo Coello has been a postdoctoral fellow at the Center of
+              Clinical Spectroscopy since 2018. His expertise is primarily in
+              acquisition and reconstruction methods for medical imaging
+              technologies, such as magnetic resonance spectroscopy (MRS),
+              spectroscopic imaging (MRSI), X-ray imaging, and ultrasound. He
+              obtained a degree in Biomedical Engineering (B.Sc.) and in
+              Biomedical Computing (M.Sc.) before completing his doctoral
+              training in the field of Medical Physics at the Technical
+              University of Munich (TUM). From 2013 to 2018 he worked at the GE
+              Global Research Center in Munich, Germany, in the development of
+              new techniques for X-ray phase-contrast imaging and accelerated
+              MRSI. In 2017, he was a visiting researcher in the Department of
+              Radiology and Biomedical Imaging at the University of California,
+              San Francisco (UCSF) where he worked on the optimization
+              high-resolution MRSI acquisition sequences at 7T. His current
+              research focuses on the development of new MRS and MRSI
+              methodologies for clinical applications at 3T and 7T.
             </p>
           </div>
         </div>
@@ -251,53 +252,46 @@ const Members = () => (
             src={katie}
             alt="Katherine Morigaki Breedlove, PhD"
           />
-          <div className="member-name">Katherine Morigaki Breedlove, PhD</div>
+          <div className="member-name">Katie Morigaki Breedlove, PhD, ATC</div>
           <div className="member-title">Postdoctoral Fellow</div>
           <div className="member-intro">
+            <p className="member-intro-p"></p>
+          </div>
+        </div>
+        <div className="page-section">
+          {/* <img className="member-portrait" src={alex} alt="Alex Lin" /> */}
+          <div className="member-name">Sai Merugumala, MS</div>
+          <div className="member-title">Research Assistant II</div>
+          <div className="member-intro">
+            <p className="member-intro-p"></p>
+          </div>
+        </div>
+        <div className="page-section alternate">
+          <img
+            className="member-portrait"
+            src={marcia}
+            alt="Marcia Sahaya Louis"
+          />
+          <div className="member-name">Marcia Sahaya Louis, BS</div>
+          <div className="member-title">Research Assistant II</div>
+          <div className="member-intro">
             <p className="member-intro-p">
-              Dr. Lin is the director of the Center for Clinical Spectroscopy at
-              Brigham and Women’s Hospital and Assistant Professor of Radiology
-              at Harvard Medical School. Dr. Lin is a graduate of the California
-              Institute of Technology, where he completed his Masters degree in
-              Bioengineering and his doctoral degree in Biochemistry and
-              Molecular Biophysics. He began his training as a research
-              associate in 1997 and was appointed Director of Clinical Services
-              and Senior Scientist at the Magnetic Resonance Spectroscopy Unit
-              at the Huntington Medical Research Institutes in 2003. Since that
-              time, he has been a visiting research associate at the Center of
-              MR Research at the University of Illinois Chicago. From 2007 to
-              2009, Dr. Lin had a research fellowship at the National Heart,
-              Lung and Blood Institute at the National Institutes of Health in
-              Bethesda, MD. Dr. Lin arrived at Brigham and Women’s Hospital in
-              2009.
+              Marcia Sahaya Louis is a Ph.D. student at the Department of
+              Electrical and Computer Engineering, Boston University who joined
+              the Center of Clinical Spectroscopy through the BU-BWH imaging
+              training program in 2016. She received a degree in Electronics and
+              Communication Engineering (B.E.) from Madras Institute of
+              Technology, and Computer Engineering from Boston University. Her
+              current research focuses on using machine learning techniques to
+              gain a better understanding of the underlying pathophysiological
+              changes in the brain, specifically for TBI. Her other research
+              interest includes the computer architecture design for machine
+              learning, hardware accelerators using FPGAs, and reconfigurable
+              computing.
             </p>
           </div>
         </div>
         <div className="page-section">
-          <img className="member-portrait" src={alex} alt="Alex Lin" />
-          <div className="member-name">Sai Merugumala, MS</div>
-          <div className="member-title">Research Assistant II</div>
-          <div className="member-intro">
-            <p className="member-intro-p">
-              Dr. Lin is the director of the Center for Clinical Spectroscopy at
-              Brigham and Women’s Hospital and Assistant Professor of Radiology
-              at Harvard Medical School. Dr. Lin is a graduate of the California
-              Institute of Technology, where he completed his Masters degree in
-              Bioengineering and his doctoral degree in Biochemistry and
-              Molecular Biophysics. He began his training as a research
-              associate in 1997 and was appointed Director of Clinical Services
-              and Senior Scientist at the Magnetic Resonance Spectroscopy Unit
-              at the Huntington Medical Research Institutes in 2003. Since that
-              time, he has been a visiting research associate at the Center of
-              MR Research at the University of Illinois Chicago. From 2007 to
-              2009, Dr. Lin had a research fellowship at the National Heart,
-              Lung and Blood Institute at the National Institutes of Health in
-              Bethesda, MD. Dr. Lin arrived at Brigham and Women’s Hospital in
-              2009.
-            </p>
-          </div>
-        </div>
-        <div className="page-section alternate">
           <img
             className="member-portrait"
             src={victoria}
@@ -325,31 +319,29 @@ const Members = () => (
             </p>
           </div>
         </div>
-        <div className="page-section ">
-          <img className="member-portrait" src={alex} alt="Alex Lin" />
+        <div className="page-section alternate">
+          <img className="member-portrait" src={sam} alt="Sam Jiang" />
           <div className="member-name">Sam Jiang, BS</div>
           <div className="member-title">Research Assistant I</div>
           <div className="member-intro">
             <p className="member-intro-p">
-              Dr. Lin is the director of the Center for Clinical Spectroscopy at
-              Brigham and Women’s Hospital and Assistant Professor of Radiology
-              at Harvard Medical School. Dr. Lin is a graduate of the California
-              Institute of Technology, where he completed his Masters degree in
-              Bioengineering and his doctoral degree in Biochemistry and
-              Molecular Biophysics. He began his training as a research
-              associate in 1997 and was appointed Director of Clinical Services
-              and Senior Scientist at the Magnetic Resonance Spectroscopy Unit
-              at the Huntington Medical Research Institutes in 2003. Since that
-              time, he has been a visiting research associate at the Center of
-              MR Research at the University of Illinois Chicago. From 2007 to
-              2009, Dr. Lin had a research fellowship at the National Heart,
-              Lung and Blood Institute at the National Institutes of Health in
-              Bethesda, MD. Dr. Lin arrived at Brigham and Women’s Hospital in
-              2009.
+              Sam Jiang is a research assistant who has been with the Center of
+              Spectroscopy since 2014 as a summer student. After graduating from
+              Haverford College in 2017 with a Bachelor of Science in computer
+              science, he took a hiatus from the lab and worked in the
+              technology industry as a software engineer. In 2019, he returned
+              to the lab as a research assistant and is now applying to medical
+              schools. He is currently the primary web developer for the lab and
+              helps collect MR data for the 2HG, Harvard Concussion, and NFL
+              studies. His previous projects with the Center for Clinical
+              Spectroscopy include a project to correlate SVS voxel-location
+              within CSI data, several pre-processing tools for <sup>13</sup>C
+              and <sup>31</sup>P data, and a poster presentation about the
+              diffences in reporting between LCModel and TARQUIN.
             </p>
           </div>
         </div>
-        <div className="past-members-section alternate">
+        <div className="past-members-section">
           <h2 className="section-title">Past Members</h2>
           <div className="subsection meds">
             <div className="subsection-title">Medical Students</div>
