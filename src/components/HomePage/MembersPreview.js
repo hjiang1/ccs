@@ -32,30 +32,30 @@ const Container = styled.div`
     }
   }
 
-    .members-image {
-      width: 100%;
-      max-height: 30rem;
-      object-fit: cover;
-      margin-bottom: 4rem;
+  .members-image {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+    margin-bottom: 4rem;
+  }
+
+  .members-button {
+    padding: 1rem 2rem;
+
+    color: var(--color-light);
+    background-color: rgba(44, 44, 70);
+    border: 2px solid rgba(44, 44, 70);
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: background-color 0.1s ease, color 0.1s ease;
+
+    :hover {
+      color: rgba(44, 44, 70);
+      background-color: transparent;
     }
-
-    .members-button {
-      padding: 1rem 2rem;
-
-      color: var(--color-light);
-      background-color: rgba(44, 44, 70);
-      border: 2px solid rgba(44, 44, 70);
-
-      font-weight: bold;
-      text-decoration: none;
-
-      transition: background-color 0.1s ease, color 0.1s ease;
-
-      :hover {
-        color: rgba(44, 44, 70);
-        background-color: transparent;
-      }
-    }
+  }
 `
 
 const MembersPreview = () => {

@@ -11,6 +11,7 @@ import katie from "../images/katie.png"
 import victoria from "../images/victoria.png"
 import marcia from "../images/marcia.png"
 import sam from "../images/sam.png"
+import lasya from "../images/lasya.png"
 
 const Container = styled.div`
   display: flex;
@@ -26,7 +27,8 @@ const Container = styled.div`
   }
 
   .page-section {
-    padding: calc(2rem * var(--spacing-modifier));
+    padding: calc(1rem * var(--spacing-modifier))
+      calc(2rem * var(--spacing-modifier));
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: min-content min-content 1fr;
@@ -73,7 +75,7 @@ const Container = styled.div`
     .member-intro {
       grid-area: intro;
 
-      line-height: 2em;
+      line-height: 1.5em;
       color: var(--text-color);
 
       .member-intro-p {
@@ -84,11 +86,11 @@ const Container = styled.div`
 
   .past-members-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: max-content auto;
     grid-template-areas:
-      "title title title"
-      "meds phds students";
+      "title title title title"
+      "meds phds catalyst summer";
     padding-bottom: 6rem;
 
     .section-title {
@@ -113,8 +115,12 @@ const Container = styled.div`
         grid-area: phds;
       }
 
-      &.students {
-        grid-area: students;
+      &.catalyst {
+        grid-area: catalyst;
+      }
+
+      &.summer {
+        grid-area: summer;
       }
 
       .subsection-title {
@@ -138,7 +144,7 @@ const Members = () => (
         <div className="page-section">
           <img className="member-portrait" src={alex} alt="Alex Lin" />
           <div className="member-name">Alexander P. Lin, PhD</div>
-          <div className="member-title">Principle Investigator</div>
+          <div className="member-title">Director</div>
           <div className="member-intro">
             <p className="member-intro-p">
               Dr. Lin is the director of the Center for Clinical Spectroscopy at
@@ -267,6 +273,25 @@ const Members = () => (
           </div>
         </div>
         <div className="page-section alternate">
+          <img className="member-portrait" src={lasya} alt="Lasya Sreepada" />
+          <div className="member-name">Lasya Sreepada, BS</div>
+          <div className="member-title">
+            PhD Student and Research Collaborator
+          </div>
+          <div className="member-intro">
+            <p className="member-intro-p">
+              Lasya is a PhD student at the University of Pennsylvania in
+              Bioengineering. She first started working with CCS as a college
+              sophomore in August 2016, and has continued research
+              collaborations since then. Lasya utilizes data science and machine
+              learning to identify biomarkers that improve diagnosis, prognosis,
+              and evaluation of treatment response in neurodegenerative
+              diseases. She focuses on Alzheimer's Disease, TBI, CTE, and
+              neurotrauma from hypoxic-ischemic injury.
+            </p>
+          </div>
+        </div>
+        <div className="page-section">
           <img
             className="member-portrait"
             src={marcia}
@@ -291,7 +316,7 @@ const Members = () => (
             </p>
           </div>
         </div>
-        <div className="page-section">
+        <div className="page-section alternate">
           <img
             className="member-portrait"
             src={victoria}
@@ -319,7 +344,7 @@ const Members = () => (
             </p>
           </div>
         </div>
-        <div className="page-section alternate">
+        <div className="page-section">
           <img className="member-portrait" src={sam} alt="Sam Jiang" />
           <div className="member-name">Sam Jiang, BS</div>
           <div className="member-title">Research Assistant I</div>
@@ -341,48 +366,38 @@ const Members = () => (
             </p>
           </div>
         </div>
-        <div className="past-members-section">
-          <h2 className="section-title">Past Members</h2>
+        <div className="past-members-section alternate">
+          <h2 className="section-title">Alumni</h2>
           <div className="subsection meds">
-            <div className="subsection-title">Medical Students</div>
+            <div className="subsection-title">Past Members</div>
             <div className="subsection-item">Joshua Ladner, MD</div>
-            <div className="subsection-item">Joshua Ladner, MD</div>
-            <div className="subsection-item">Joshua Ladner, MD</div>
-            <div className="subsection-item">Joshua Ladner, MD</div>
-            <div className="subsection-item">Joshua Ladner, MD</div>
-            <div className="subsection-item">Joshua Ladner, MD</div>
-            <div className="subsection-item">Joshua Ladner, MD</div>
-            <div className="subsection-item">Joshua Ladner, MD</div>
-            <div className="subsection-item">Joshua Ladner, MD</div>
+            <div className="subsection-item">Praveen 'Dev' Merugumala, BS</div>
+            <div className="subsection-item">Xi 'April' Long, MD</div>
             <div className="subsection-item">Joshua Ladner, MD</div>
           </div>
           <div className="subsection phds">
             <div className="subsection-title">Postdoctoral Fellows</div>
             <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
-            <div className="subsection-item">Ben Rowland, PhD</div>
           </div>
-          <div className="subsection students">
+          <div className="subsection catalyst">
+            <div className="subsection-title">Harvard Catalyst Students</div>
+            <div className="subsection-item">Oluseyi Awodele (VRIP 2010)</div>
+            <div className="subsection-item">Ana Cadenas (SCTRP 2011)</div>
+            <div className="subsection-item">Malcolm Reid (SCTRP 2012)</div>
+            <div className="subsection-item">Walker Keenan (SCTRP 2013</div>
+            <div className="subsection-item">Mohamed Mohamed (VRIP 2014)</div>
+            <div className="subsection-item">Matt Henriques (VRIP 2015)</div>
+            <div className="subsection-item">Grace Ahn (SCTRP 2016)</div>
+            <div className="subsection-item">Hemali Panchal (VRIP 2017)</div>
+            <div className="subsection-item">Abraham Isak (VRIP 2018)</div>
+            <div className="subsection-item">Carol Martin</div>
+          </div>
+          <div className="subsection summer">
             <div className="subsection-title">Summer Students</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
-            <div className="subsection-item">Sam Jiang, BS</div>
+            <div className="subsection-item">
+              Sribindu Sreepada (Summer 2019)
+            </div>
+            <div className="subsection-item">Fatah Adan (SSJP)</div>
           </div>
         </div>
       </Container>
