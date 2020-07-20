@@ -261,7 +261,19 @@ const Members = () => (
           <div className="member-name">Katie Morigaki Breedlove, PhD, ATC</div>
           <div className="member-title">Postdoctoral Fellow</div>
           <div className="member-intro">
-            <p className="member-intro-p"></p>
+            <p className="member-intro-p">
+              Katherine Breedlove, PhD, is Research Fellow in Radiology at
+              Harvard Medical School and Brigham and Women’s Hospital under the
+              guidance of Dr. Alexander Lin. Her work at BWH focuses on using
+              neuroimaging technology to study the mechanism and outcomes
+              following sport-related concussion. Dr. Breedlove completed her MS
+              and PhD at Purdue University as a member of the Purdue Neurotrauma
+              Group and her BS degree in Athletic Training from Boston
+              University. She has previously held postdoctoral positions at the
+              University of Delaware and the University of Michigan and has
+              previously worked on the sports medicine staffs at Boston College,
+              Purdue University, and the Pittsburgh Steelers.
+            </p>
           </div>
         </div>
         <div className="page-section">
